@@ -401,3 +401,28 @@ cadena pasa en el estado $i$, podemos finalmente escribir la expresión
 (5) como sigue
 
 $$m_{i,j} = \frac{1}{r_{i}}\  + \sum_{k \neq j}^{}{(\frac{1}{r_{i}} +}\frac{q_{ik}}{r_{i}}m_{k,j}) = \frac{1}{r_{i}}\ \left( 1 + \sum_{k \neq j}^{}{q_{ik}m_{k,j}} \right)$$
+
+
+<span style="font-size:12px;"> 
+MIT License
+
+Copyright ©  2024 tabarespozos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</span>

@@ -65,7 +65,7 @@ Despliegue el contenido:
 ```{admonition} Haz click acá!
 :class: tip, dropdown
 ¡Esperamos disfrutes el curso tanto como nosotros!
-
+```
 
 <span style="font-size:12px;"> 
 MIT License
