@@ -1,4 +1,4 @@
-# <span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span>
+# <span style="color:#76325a">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span>
 
 Como vimos anteriormente, al caracterizar estados, existen cadenas de
 Markov que incluyen estados absorbentes y estados transitorios. Los

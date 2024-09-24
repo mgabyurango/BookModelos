@@ -1,4 +1,4 @@
-# <span style="color:#A62465">Procesos estocásticos</span>
+# <span style="color:#ff653b">Procesos estocásticos</span>
 
 En este capítulo abordaremos el concepto básico de proceso estocástico,
 concepto usado como instrumento para diseñar modelos probabilísticos de

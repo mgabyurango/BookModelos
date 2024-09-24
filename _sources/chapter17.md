@@ -1,4 +1,4 @@
-# <span style="color:#4F8F1E">Programación Dinámica</span>
+# <span style="color:#007fb9">Programación Dinámica</span>
 
 En este capítulo hablaremos sobre el método de solución denominado
 programación dinámica. Este es aplicado para resolver problemas de

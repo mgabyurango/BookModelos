@@ -1,4 +1,4 @@
-# <span style="color:#E57231">Teoría de Colas</span>
+# <span style="color:#7c71c6">Teoría de Colas</span>
 
 En este capítulo se presenta el desarrollo de las medidas de desempeño
 para algunos procesos de nacimiento y muerte, también conocidos como

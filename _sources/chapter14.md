@@ -1,4 +1,4 @@
-# <span style="color:#E57231">Costos en cadenas de Markov</span>
+# <span style="color:#7c71c6">Costos en cadenas de Markov</span>
 
 En este documento se introduce el concepto de estructura de costo
 (*reward structure*, en inglés), que proporciona un enfoque muy general

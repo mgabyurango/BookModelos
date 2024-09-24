@@ -1,4 +1,4 @@
-# <span style="color:#008380">Cadenas embebidas</span>
+# <span style="color:#76325a">Cadenas embebidas</span>
 
 En este capítulo se define una relación importante entre las cadenas de
 Markov en tiempo continuo y aquellas en tiempo discreto. En particular,

@@ -1,4 +1,4 @@
-# <span style="color:#4F8F1E">Procesos de decisión en el tiempo</span>
+# <span style="color:#007fb9">Procesos de decisión en el tiempo</span>
 
 En este capítulo trataremos el problema de toma de decisiones óptimas,
 cuando no todas las decisiones tienen que ser tomadas en el mismo
