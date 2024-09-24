@@ -1,4 +1,4 @@
-# <span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span>
+# <span style="color:#007fb9">Principio de Optimalidad y Ecuaciones de Bellman</span>
 
 En este capítulo se presenta la definición del principio de optimalidad,
 condición necesaria para resolver un problema de decisión en el tiempo

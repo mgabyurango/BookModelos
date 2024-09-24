@@ -1,4 +1,4 @@
-# <span style="color:#008380">Procesos de Poisson</span>
+# <span style="color:#76325a">Procesos de Poisson</span>
 
 En este capítulo se introduce el proceso estocástico conocido como
 *Proceso de Poisson*. Se presentan las generalidades sobre este tipo de

@@ -1,4 +1,4 @@
-# <span style="color:#008380">Análisis transitorio de cadenas de Markov</span>
+# <span style="color:#76325a">Análisis transitorio de cadenas de Markov</span>
 
 En este documento se explican los fundamentos matemáticos del análisis
 transitorio de las cadenas de Markov en tiempo discreto y continuo. A
