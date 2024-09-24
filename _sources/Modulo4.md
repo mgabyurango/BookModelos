@@ -1,4 +1,4 @@
-# <span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span>
+# <span style="color:#ffa600">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span>
 
 Las lecturas de este módulo son:
 
