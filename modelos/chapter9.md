@@ -17,7 +17,7 @@ en algún estado transitorio.
 Una cadena de Markov (discreta o continua) es *absorbente* si:
 
 > 1.  Su espacio de estados $S$ incluye un subconjunto de estados $A \subset S$ 
-tal que todo estado $i \in A$ es absorbente;
+tal que todo estado $i \in A$ es absorbente.
 
 > 2.  Para todo estado $j \in S\backslash A$, existe un estado $i \in A$
 tal que $j \rightarrow i$.
@@ -136,7 +136,7 @@ $(i,j) \in S$ luego de $n$ transiciones[^1], el número de visitas a los
 estados transitorios puede ser determinado a partir del límite
 $\lim_{n \rightarrow \infty}{\mathbf{M}}^{n}$. Lo anterior, gracias a
 que si dejamos que $n$ se vuelva muy grande, la parte asociada a los
-estadios transitorios convergerá a un valor finito, ya que la cadena
+estados transitorios convergerá a un valor finito, ya que la cadena
 será absorbida. Podemos escribir el límite como sigue:
 
 $$\lim_{n \rightarrow \infty}\mathbf{M}^{n} = \lim_{n \rightarrow \infty}{\sum_{j = 0}^{n}\mathbf{P}^{j}}$$
@@ -235,7 +235,7 @@ En esta sección consideramos una cadena **absorbente** en tiempo
 discreto, y vamos a proporcionar un método para calcular las
 probabilidades de absorción en el largo plazo de la cadena desde los
 estados transitorios. Primero, observamos que la cadena cumpla con las
-definiciones de cadena **absorbente** definidas anteriormente**.**
+definiciones de cadena **absorbente** definidas anteriormente.
 También, observamos que si el número de estados absorbentes $N_{A}$ es
 igual a 1, el problema es trivial, ya que la cadena será absorbida en el
 único estado absorbente con total certeza.
@@ -307,7 +307,7 @@ $\mathbb{P}^{2}\mathbb{= P \bullet P =}\begin{bmatrix}
 0 & \mathbb{I}
 \end{bmatrix}$.
 
-Para $\mathbb{P}^{3}$, se obtiene que
+Para $\mathbb{P}^{3}$, se obtiene que:
 
 $\mathbb{P}^{3} = \mathbb{P}^{2}\mathbb{\bullet P} = \begin{bmatrix}
 \mathbf{Q}^{2} & \mathbf{QR} + \mathbf{R} \\
@@ -520,7 +520,7 @@ probabilidades límite de una cadena absorbente continua pueden ser
 calculadas a partir de las probabilidades condicionales del transitorio.
 Dichas probabilidades se calculan a través del exponencial de la matriz
 de las tasas de transición $\mathbf{Q}$. En particular, recordamos que
-el exponencial de una matriz cuadrada $A$ es la matriz
+el exponencial de una matriz cuadrada $A$ es la matriz:
 
 $$e^{\mathbb{A}} = I + \mathbb{A} + \frac{\mathbb{A}^{2}}{2!} + \frac{\mathbb{A}^{3}}{3!} + \frac{\mathbb{A}^{4}}{4!} + \cdots = \sum_{j = 0}^{\infty}\frac{\mathbb{A}^{j}}{j!}$$
 
@@ -627,7 +627,7 @@ absorbente en tiempo continuo es entonces la siguiente:
 
   ----------------------------------------------------------------------------------------------------------------------
 
-En el límite por $t \rightarrow + \infty$ se obtiene que
+En el límite por $t \rightarrow + \infty$ se obtiene que:
 
 $$\lim_{t \rightarrow + \infty}e^{\mathbf{Q} \bullet t} = \lim_{t \rightarrow + \infty}\begin{bmatrix}
 e^{\mathbb{U} \bullet t} & \mathbb{U}^{- 1}\left( e^{\mathbb{U} \bullet t} - \mathbb{I} \right)\mathbb{V} \\
@@ -717,7 +717,7 @@ idénticas en valor a aquellas que se muestran en la Figura 5.
 
 ## Probabilidades de absorción mediante la EMC
 
-Como se mencionó en la 9.5, es posible calcular las probabilidades de
+Como se mencionó en la 10.5, es posible calcular las probabilidades de
 absorción de una cadena en tiempo continuo, encontrando primero la
 cadena embebida (EMC), y usando ésta última para calcular las
 probabilidades. A continuación, se muestra un ejemplo que ilustra dicha
@@ -727,13 +727,13 @@ aproximación.
 :class: suggestion
 
 Considerando el mismo contexto presentado en el ejemplo
-2, y recordando la formulación
+2, y recordando la formulación:
 
 $q_{(i,e),(j,f)} = \left\{ \begin{matrix}
 {(i \bullet T)}^{- 1} & si\ j = i - 1\ y\ e = f = I \\
 \omega & si\ j = i\ y\ e = I\ y\ f = D \\
 0 & en\ todos\ los\ demás\ casos
-\end{matrix} \right.\ $,
+\end{matrix} \right.\ $
 
 es posible obtener la cadena embebida, cuyo diagrama de estado
 transición es el siguiente:
@@ -766,5 +766,5 @@ $r_{(i,I),(i,D)} = \omega/(\frac{1}{iT} + \omega)$.
 
 
 
-[^1]: Para mayor detalle, revisar la nota 8-Análisis de tiempos
-    promedio.
+[^1]: Para mayor detalle, revisar la nota 9-Análisis de tiempos
+    promedio[nota 9- Análisis de tiempos promedios](chapter8.md).
