@@ -38,7 +38,8 @@ parts:
     - file: chapter18
 
 - caption: Complementarias
-    numbered: false
-    chapters:
-      - file: Complementaria1
-      - file: Complementaria2
+  numbered: false
+  chapters:
+  - file: Complementaria1
+  - file: Complementaria2
+
