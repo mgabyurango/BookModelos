@@ -1,4 +1,4 @@
-# Cadenas de Markov
+# <span style="color:#008380">Cadenas de Markov</span>
 
 En este capítulo se introducen los procesos estocásticos conocidos como
 Cadenas de Markov. Se presentan las generalidades sobre este tipo de

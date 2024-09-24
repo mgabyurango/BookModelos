@@ -1,4 +1,4 @@
-# Análisis de tiempos promedios
+# <span style="color:#008380">Análisis de tiempos promedios</span>
 
 En este capítulo se presentan las técnicas para el análisis de tiempos
 promedio en cadenas de Markov. En particular, se consideran en primer

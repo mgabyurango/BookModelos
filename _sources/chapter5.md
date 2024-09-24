@@ -1,4 +1,4 @@
-# Clasificación de estados
+# <span style="color:#008380">Clasificación de estados</span>
 
 En este capítulo se presenta la definición de periodicidad e
 irreductibilidad de las cadenas de Markov, dos propiedades importantes
