@@ -14,26 +14,18 @@ parts:
     sections:
     - file: chapter2
     - file: chapter3
-    sections:
     - file: chapter4
-    sections:
     - file: chapter5
-    sections:
     - file: chapter6
     - file: chapter7
-    sections:
     - file: chapter8
-    sections: 
     - file: chapter9
 
   - file: Modulo3
     sections:
     - file: chapter10
     - file: chapter11
-    - file: chapter12
-    sections:
     - file: chapter13
-    sections:
     - file: chapter14
 
   - file: Modulo4
@@ -42,5 +34,5 @@ parts:
     - file: chapter16
     - file: chapter17
     - file: Semana 15
-    sections:
     - file: chapter18
+- caption: Complementarias

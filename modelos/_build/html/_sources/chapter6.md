@@ -1,4 +1,4 @@
-# Probabilidades en estado estable
+# <span style="color:#008380">Probabilidades en estado estable</span>
 
 En este capítulo se presenta la definición, cálculo y uso de las
 probabilidades en estado estable. Tanto para cadenas de Markov de tiempo

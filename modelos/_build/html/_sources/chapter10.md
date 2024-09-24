@@ -1,4 +1,4 @@
-# Ley de Little
+# <span style="color:#E57231">Ley de Little</span>
 
 Este breve capítulo introduce la Ley de Little, describe su generalidad
 y presenta algunas aplicaciones relevantes para los análisis de sistemas
@@ -7,9 +7,9 @@ que alcanzan un estado estacionario.
 ## Introducción
 
 El resultado que se conoce como Ley de Little (Little's law, en inglés),
-fue propuesto en 1954 por John Dutton Conant Little, quien es Profesor
+fue propuesto en 1954 por John Dutton Conant Little, quien es profesor
 del Massachusetts Institute of Technology (hoy tiene 94 años). El
-resultado de Little es una formula muy sencilla que relaciona el número
+resultado de Little es una fórmula muy sencilla que relaciona el número
 promedio de entidades en un sistema, con la tasa de llegada y el tiempo
 promedio de permanencia de los usuarios.
 
@@ -24,7 +24,7 @@ Es importante observar que todas las cantidades mencionadas se entienden
 evaluadas en el **estado estacionario (estable)** de un sistema. La Ley
 de Little será particularmente útil para analizar sistemas para los
 cuales se conocen, o se pueden calcular fácilmente, dos de las tres
-cantidades$L,\ \lambda\ o\ W$ <u>**Es incorrecto aplicar la Ley de Little
+cantidades $L,\ \lambda\ o\ W$ <u>. **Es incorrecto aplicar la Ley de Little
 a un sistema que no se encuentre en estado estacionario**.</u>
 
 El resultado de Little es muy general, aplica para sistemas de cualquier
@@ -40,7 +40,7 @@ mismo sistema a diferentes niveles de abstracción, proporcionando
 diferentes tipos de resultados.
 
 Para aplicar la Ley de Little, es necesario conocer dos de las
-cantidades que la formula relaciona, y de manera sencilla se obtiene la
+cantidades que la fórmula relaciona, y de manera sencilla se obtiene la
 tercera.
 
 ## Ejemplos de aplicación
@@ -51,11 +51,9 @@ de cada chasis es de 21 minutos, tal como se observa en la
 Ilustración 1. ¿Es posible a través de la Ley de Little obtener el
 número promedio de chasis en la línea de producción?
 
-![](media/image1.png){width="3.625in" height="0.7443985126859143in"}
-
 ![Ilustración 1](little1.png)
 
-La respuesta es sí. Conocemos la tasa de llegada de los chasis, la cuál
+La respuesta es sí. Conocemos la tasa de llegada de los chasis, la cual
 es $\lambda = 25\ \text{horas}^{- 1}$, y también conocemos el tiempo
 promedio que cada chasis permanece en el sistema de producción, lo cual
 denotamos con $W$, siendo $W = 21\ \text{min} = 0.35\ \text{horas}$. Entonces podemos calcular el

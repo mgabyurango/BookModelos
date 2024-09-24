@@ -1,4 +1,4 @@
-# Procesos de nacimiento y muerte
+# <span style="color:#E57231">Procesos de nacimiento y muerte</span>
 
 En este capítulo se introduce una clase de procesos estocásticos de
 tiempo continúo conocida como Procesos de nacimiento y muerte, muy

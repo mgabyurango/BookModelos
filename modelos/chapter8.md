@@ -89,7 +89,7 @@ ocupación ponderados por las probabilidades iniciales.
 ```{admonition} Nota
 :class: warning
 Para el caso de las CMTD, el tiempo promedio de
-ocupación tendrá que ser interpretado en términos discretos, es decir
+ocupación tendrá que ser interpretado en términos discretos, es decir,
 corresponde al número promedio de veces que la cadena ocupa o visita el
 estado de interés.
 ```
@@ -118,7 +118,7 @@ es:
 *Figura 2. Cadena de Markov en tiempo discreto*
 
 Si la cadena está actualmente en el estado 3, el tiempo promedio (en
-este caso discreto, es decir el número de pasos de evolución necesarios)
+este caso discreto, es decir, el número de pasos de evolución necesarios)
 para alcanzar por primera vez el estado 2 estará dado por el elemento
 $m_{3,2}$ de la matriz$\ \mathbf{m}$. Igual que en el ejemplo anterior,
 si sólo se conoce el estado inicial en términos de una distribución de
@@ -211,7 +211,7 @@ sobre todos los pasos, se obtiene para $M_{ij}^{n}$
 $$M_{ij}^{n} = p_{ij}^{0} + p_{ij} + p_{ij}^{2}\cdots + p_{ij}^{n}$$
 
 Donde $p_{ij}^{0} = 1$ si y solo si $i = j$. Entonces, para la matriz
-$\mathbf{M}^{n}$ se obtiene la siguiente fórmula
+$\mathbf{M}^{n}$ se obtiene la siguiente fórmula:
 
   -----------------------------------------------------------------------------------------------------------------------------
   $$\mathbf{M}^{n}\mathbb{= I +}\mathbf{P} + \mathbf{P}^{2}\cdots + \mathbf{P}^{n} = \sum_{k = 0}^{n}\mathbf{P}^{k}$$
