@@ -357,9 +357,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -375,19 +373,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-concierge-bell-style-color-a62465-i-modulo-1-introduccion"><i class="fas fa-concierge-bell" style="color:#A62465"></i> <span class="xref myst">Módulo 1: Introducción</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-object-ungroup-style-color-008380-i-modulo-2-de-un-sistema-real-a-un-modelo"><i class="fas fa-object-ungroup" style="color:#008380"></i> <span class="xref myst">Módulo 2: De un sistema real a un modelo</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-pen-ruler-style-color-e57231-i-modulo-3-medir-el-sistema-a-traves-del-modelo"><i class="fas fa-pen-ruler" style="color:#E57231"></i> <span class="xref myst">Módulo 3: Medir el sistema a través del modelo</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-modulo-4-toma-de-decisiones-para-mejorar-el-sistema"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Módulo 4: Toma de decisiones para mejorar el sistema</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-1-introduccion-a-python"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Complementaria 1: Introducción a Python</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-2-algebra-lineal-en-python"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Complementaria 2: Álgebra Lineal en Python</span></a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -400,34 +385,66 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="span-style-color-ffa600-font-weight-bold-bienvenido-al-curso-de-modelos-probabilisticos-span">
 <h1><span style="color:#ffa600; font-weight: bold;">Bienvenido al curso de Modelos Probabilísticos</span><a class="headerlink" href="#span-style-color-ffa600-font-weight-bold-bienvenido-al-curso-de-modelos-probabilisticos-span" title="Permalink to this heading">#</a></h1>
 <p>Este es el libro oficial del curso de Modelos Probabilísticos que el equipo hemos creado para ti; esperamos que lo disfrutes y te sea de gran ayuda durante el curso. Recuerda que es muy importante realizar las lecturas asignadas a cada semana, ya que de ello depende la correcta comprensión de los temas.</p>
-<details>
-<summary>Lecturas Semanales</summary>
-<section id="i-class-fas-fa-concierge-bell-style-color-a62465-i-modulo-1-introduccion">
-<h2><i class="fas fa-concierge-bell" style="color:#A62465"></i> <a class="reference internal" href="Modulo1.html"><span class="doc std std-doc">Módulo 1: Introducción</span></a><a class="headerlink" href="#i-class-fas-fa-concierge-bell-style-color-a62465-i-modulo-1-introduccion" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="i-class-fas-fa-object-ungroup-style-color-008380-i-modulo-2-de-un-sistema-real-a-un-modelo">
-<h2><i class="fas fa-object-ungroup" style="color:#008380"></i> <a class="reference internal" href="Modulo2.html"><span class="doc std std-doc">Módulo 2: De un sistema real a un modelo</span></a><a class="headerlink" href="#i-class-fas-fa-object-ungroup-style-color-008380-i-modulo-2-de-un-sistema-real-a-un-modelo" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="i-class-fas-fa-pen-ruler-style-color-e57231-i-modulo-3-medir-el-sistema-a-traves-del-modelo">
-<h2><i class="fas fa-pen-ruler" style="color:#E57231"></i> <a class="reference internal" href="Modulo3.html"><span class="doc std std-doc">Módulo 3: Medir el sistema a través del modelo</span></a><a class="headerlink" href="#i-class-fas-fa-pen-ruler-style-color-e57231-i-modulo-3-medir-el-sistema-a-traves-del-modelo" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="i-class-fas-fa-lightbulb-style-color-4f8f1e-i-modulo-4-toma-de-decisiones-para-mejorar-el-sistema">
-<h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a class="reference internal" href="Modulo4.html"><span class="doc std std-doc">Módulo 4: Toma de decisiones para mejorar el sistema</span></a><a class="headerlink" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-modulo-4-toma-de-decisiones-para-mejorar-el-sistema" title="Permalink to this heading">#</a></h2>
+<p>Despliegue el contenido</p>
+<style>
+.modules-dropdown summary {
+    font-size: 1.5em; /* Tamaño de letra más grande para el título de Módulos */
+    background-color: #f8d7da; /* Color de fondo para el título de Módulos */
+    padding: 10px; /* Espaciado alrededor del título */
+    border: 1px solid #f5c6cb; /* Borde alrededor del título */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el título */
+}
+
+.modules-dropdown h2 {
+    font-size: 1.2em; /* Tamaño de letra para los elementos dentro del dropdown de Módulos */
+    color: #721c24; /* Color del texto */
+    margin: 10px 0; /* Margen alrededor de los elementos */
+    padding: 5px; /* Espaciado alrededor de los elementos */
+}
+
+.modules-dropdown h2:hover {
+    background-color: #f5c6cb; /* Cambia el fondo al pasar el mouse sobre los elementos de Módulos */
+}
+
+.complementary-dropdown summary {
+    font-size: 1.5em; /* Tamaño de letra más grande para el título de Complementarias */
+    background-color: #d4edda; /* Color de fondo para el título de Complementarias */
+    padding: 10px; /* Espaciado alrededor del título */
+    border: 1px solid #c3e6cb; /* Borde alrededor del título */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el título */
+}
+
+.complementary-dropdown h2 {
+    font-size: 1.2em; /* Tamaño de letra para los elementos dentro del dropdown de Complementarias */
+    color: #155724; /* Color del texto */
+    margin: 10px 0; /* Margen alrededor de los elementos */
+    padding: 5px; /* Espaciado alrededor de los elementos */
+}
+
+.complementary-dropdown h2:hover {
+    background-color: #c3e6cb; /* Cambia el fondo al pasar el mouse sobre los elementos de Complementarias */
+}
+</style>
+<details class="modules-dropdown">
+    <summary>Módulos: Lecturas Semanales</summary>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;h2&gt;&lt;i class=&quot;fas fa-concierge-bell&quot; style=&quot;color:#A62465&quot;&gt;&lt;/i&gt; [Módulo 1: Introducción](Modulo1.md)&lt;/h2&gt;
+&lt;h2&gt;&lt;i class=&quot;fas fa-object-ungroup&quot; style=&quot;color:#008380&quot;&gt;&lt;/i&gt; [Módulo 2: De un sistema real a un modelo](Modulo2.md)&lt;/h2&gt;
+&lt;h2&gt;&lt;i class=&quot;fas fa-pen-ruler&quot; style=&quot;color:#E57231&quot;&gt;&lt;/i&gt; [Módulo 3: Medir el sistema a través del modelo](Modulo3.md)&lt;/h2&gt;
+&lt;h2&gt;&lt;i class=&quot;fas fa-lightbulb&quot; style=&quot;color:#4F8F1E&quot;&gt;&lt;/i&gt; [Módulo 4: Toma de decisiones para mejorar el sistema](Modulo4.md)&lt;/h2&gt;
+</pre></div>
+</div>
 </details>
-<details>
-<summary>Complementarias</summary>
-</section>
-<section id="i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-1-introduccion-a-python">
-<h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a class="reference internal" href="Complementaria1.html"><span class="doc std std-doc">Complementaria 1: Introducción a Python</span></a><a class="headerlink" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-1-introduccion-a-python" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-2-algebra-lineal-en-python">
-<h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a class="reference internal" href="Complementaria2.html"><span class="doc std std-doc">Complementaria 2: Álgebra Lineal en Python</span></a><a class="headerlink" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-2-algebra-lineal-en-python" title="Permalink to this heading">#</a></h2>
+<details class="complementary-dropdown">
+    <summary>Complementarias</summary>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;h2&gt;&lt;i class=&quot;fas fa-lightbulb&quot; style=&quot;color:#4F8F1E&quot;&gt;&lt;/i&gt; [Complementaria 1: Introducción a Python](Complementaria1.ipynb)&lt;/h2&gt;
+&lt;h2&gt;&lt;i class=&quot;fas fa-lightbulb&quot; style=&quot;color:#4F8F1E&quot;&gt;&lt;/i&gt; [Complementaria 2: Álgebra Lineal en Python](Complementaria2.ipynb)&lt;/h2&gt;
+</pre></div>
+</div>
 </details>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Haz click acá!</p>
 <p>¡Esperamos disfrutes el curso tanto como nosotros!</p>
 </div>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -483,25 +500,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-concierge-bell-style-color-a62465-i-modulo-1-introduccion"><i class="fas fa-concierge-bell" style="color:#A62465"></i> <span class="xref myst">Módulo 1: Introducción</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-object-ungroup-style-color-008380-i-modulo-2-de-un-sistema-real-a-un-modelo"><i class="fas fa-object-ungroup" style="color:#008380"></i> <span class="xref myst">Módulo 2: De un sistema real a un modelo</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-pen-ruler-style-color-e57231-i-modulo-3-medir-el-sistema-a-traves-del-modelo"><i class="fas fa-pen-ruler" style="color:#E57231"></i> <span class="xref myst">Módulo 3: Medir el sistema a través del modelo</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-modulo-4-toma-de-decisiones-para-mejorar-el-sistema"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Módulo 4: Toma de decisiones para mejorar el sistema</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-1-introduccion-a-python"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Complementaria 1: Introducción a Python</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-class-fas-fa-lightbulb-style-color-4f8f1e-i-complementaria-2-algebra-lineal-en-python"><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <span class="xref myst">Complementaria 2: Álgebra Lineal en Python</span></a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
