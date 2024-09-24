@@ -1,4 +1,4 @@
-# <span style="color:#4F8F1E">Procesos de Decisión Markovianos</span>
+# <span style="color:#007fb9">Procesos de Decisión Markovianos</span>
 
 ## Introducción
 

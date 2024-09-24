@@ -1,4 +1,4 @@
-# <span style="color:#E57231">Ley de Little</span>
+# <span style="color:#7c71c6">Ley de Little</span>
 
 Este breve capítulo introduce la Ley de Little, describe su generalidad
 y presenta algunas aplicaciones relevantes para los análisis de sistemas
