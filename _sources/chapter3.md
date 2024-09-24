@@ -255,3 +255,4 @@ $$\mathbf{Q}_{1} = \begin{bmatrix}
 \end{bmatrix}$$
 
 ![Componentes de un diagrama de tasas](cadenasMarkov5.png)
+
