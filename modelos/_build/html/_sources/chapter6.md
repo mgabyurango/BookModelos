@@ -371,3 +371,5 @@ encuentre vacío en cualquier momento del tiempo es de $\frac{32}{53}$,
 mientras la probabilidad de que haya 1 cliente es $\frac{16}{53}$, 2
 clientes $\frac{4}{53}$, y finalmente 3 clientes $\frac{1}{53}$.
 
+
+
