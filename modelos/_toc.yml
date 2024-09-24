@@ -40,6 +40,6 @@ parts:
 - caption: Complementarias
   numbered: false
   chapters:
-  - file: Complementaria1
-  - file: Complementaria2
+  - file: Complementaria1.ipynb
+  - file: Complementaria2.ipynb
 
