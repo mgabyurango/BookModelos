@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Cadenas embebidas" href="chapter7.html" />
+    <link rel="prev" title="Clasificación de estados" href="chapter5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,20 +159,33 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecturas Semanales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo1.html"><span style="color:#A62465">Módulo 1: Introducción (Semana 1)</span></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html"><span style="color:#A62465">Procesos estocásticos</span></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter8.html"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -496,12 +511,12 @@ Determine las probabilidades en estado estable del inventario.</p>
 </div>
 <div class="suggestion admonition">
 <p class="admonition-title">Solución Ejemplo</p>
-<p>Se define la variable como
+<p>Se define la variable como:
 <span class="math notranslate nohighlight">\(X_{n} = El\ número\ de\ televisores\ en\ inventario\ al\ principio\ de\ la\ n - \text{ésima semana}\)</span>.
 Por lo que el espacio de estados es <span class="math notranslate nohighlight">\(S = \{ 1,2,3\}\)</span>. Este no contiene
 el 0, dado que, al definir el periodo de observación de la variable al
 inicio de la semana, si el domingo no hay unidades en el inventario, se
-pedirán 3 unidades hasta saturar el sistema. En caso que haya una o más
+pedirán 3 unidades hasta saturar el sistema. En caso de que haya una o más
 unidades en inventario al final de la semana (domingo), no se pedirán
 unidades. Esto muestra que, de acuerdo con la definición de la
 temporalidad de <span class="math notranslate nohighlight">\(X_{n}\)</span>, el estado <span class="math notranslate nohighlight">\(X_{n} = 0\)</span> nunca se observará.</p>
@@ -626,7 +641,7 @@ de personas en el banco.</p>
 Considerando que como máximo se pueden estar atendiendo dos personas,
 más la que se encuentra en la fila, el espacio de estados se define como
 <span class="math notranslate nohighlight">\(S = \{ 0,1,2,3\}\)</span>. Ahora, aplicando el concepto de mínimo de
-exponenciales (visto en la lectura <em>2-Procesos de Poisson</em>), y usando la
+exponenciales (visto en la lectura <em>3-Procesos de Poisson</em>), y usando la
 tasa de llegada y la tasa de atención, se sabe entonces que la matriz
 generadora se puede representar como:</p>
 <div class="math notranslate nohighlight">
@@ -710,7 +725,7 @@ formular las ecuaciones de balance
 \[5\pi_{1} - 25\pi_{2} + 20\pi_{3} = 0\]</div>
 <div class="math notranslate nohighlight">
 \[5\pi_{2} - 20\pi_{3} = 0\]</div>
-<p>Aparte se debe agregar la ecuación de normalización:</p>
+<p>Aparte, se debe agregar la ecuación de normalización:</p>
 <div class="math notranslate nohighlight">
 \[\pi_{0} + \pi_{1} + \pi_{2} + \pi_{3} = 1\]</div>
 <p>Dado que las ecuaciones de balance son linealmente dependientes entre
@@ -758,6 +773,24 @@ clientes <span class="math notranslate nohighlight">\(\frac{4}{53}\)</span>, y f
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span style="color:#008380">Clasificación de estados</span></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span style="color:#008380">Cadenas embebidas</span></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>

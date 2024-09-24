@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter8';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción" href="chapter9.html" />
+    <link rel="prev" title="Cadenas embebidas" href="chapter7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,20 +159,33 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecturas Semanales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo1.html"><span style="color:#A62465">Módulo 1: Introducción (Semana 1)</span></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html"><span style="color:#A62465">Procesos estocásticos</span></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -483,7 +498,7 @@ ocupación ponderados por las probabilidades iniciales.</p>
 <div class="warning admonition">
 <p class="admonition-title">Nota</p>
 <p>Para el caso de las CMTD, el tiempo promedio de
-ocupación tendrá que ser interpretado en términos discretos, es decir
+ocupación tendrá que ser interpretado en términos discretos, es decir,
 corresponde al número promedio de veces que la cadena ocupa o visita el
 estado de interés.</p>
 </div>
@@ -507,7 +522,7 @@ es:</p>
 <p><img alt="Figura 2" src="_images/tiempos2.png" /></p>
 <p><em>Figura 2. Cadena de Markov en tiempo discreto</em></p>
 <p>Si la cadena está actualmente en el estado 3, el tiempo promedio (en
-este caso discreto, es decir el número de pasos de evolución necesarios)
+este caso discreto, es decir, el número de pasos de evolución necesarios)
 para alcanzar por primera vez el estado 2 estará dado por el elemento
 <span class="math notranslate nohighlight">\(m_{3,2}\)</span> de la matriz<span class="math notranslate nohighlight">\(\ \mathbf{m}\)</span>. Igual que en el ejemplo anterior,
 si sólo se conoce el estado inicial en términos de una distribución de
@@ -593,7 +608,7 @@ sobre todos los pasos, se obtiene para <span class="math notranslate nohighlight
 <div class="math notranslate nohighlight">
 \[M_{ij}^{n} = p_{ij}^{0} + p_{ij} + p_{ij}^{2}\cdots + p_{ij}^{n}\]</div>
 <p>Donde <span class="math notranslate nohighlight">\(p_{ij}^{0} = 1\)</span> si y solo si <span class="math notranslate nohighlight">\(i = j\)</span>. Entonces, para la matriz
-<span class="math notranslate nohighlight">\(\mathbf{M}^{n}\)</span> se obtiene la siguiente fórmula</p>
+<span class="math notranslate nohighlight">\(\mathbf{M}^{n}\)</span> se obtiene la siguiente fórmula:</p>
 <hr class="docutils" />
 <div class="math notranslate nohighlight">
 \[\mathbf{M}^{n}\mathbb{= I +}\mathbf{P} + \mathbf{P}^{2}\cdots + \mathbf{P}^{n} = \sum_{k = 0}^{n}\mathbf{P}^{k}\]</div>
@@ -800,6 +815,24 @@ cadena pasa en el estado <span class="math notranslate nohighlight">\(i\)</span>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span style="color:#008380">Cadenas embebidas</span></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter9.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>

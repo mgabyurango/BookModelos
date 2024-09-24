@@ -51,7 +51,7 @@ matriz de probabilidades condicionales, que permite conocer la
 probabilidad de alcanzar un estado $j$ en un paso, dado que el estado
 actual de la cadena de Markov es el estado $i$. En una fórmula:
 
-$p_{ij} = P\left\lbrack Z_{n + 1} = j \middle| Z_{n} = i \right\rbrack$.
+$p_{ij} = P\left\lbrack Z_{n + 1} = j \middle| Z_{n} = i \right\rbrack$
 
 Recuerde que, por la propiedad de homogeneidad, el que aparezca en la
 fórmula anterior el índice $n$ no quiere decir que la probabilidad sea
@@ -83,7 +83,7 @@ tiempo $0$, es posible calcular el vector de distribución de
 probabilidad de estado en el tiempo $1\ $(que denotamos con
 ${\overrightarrow{\pi}}^{1})$ a través del siguiente producto:
 
-$${\overrightarrow{\pi}}^{1} = \overrightarrow{\alpha} \bullet P.$$
+$${\overrightarrow{\pi}}^{1} = \overrightarrow{\alpha} \bullet P$$
 
 El resultado de la multiplicación entre el vector
 $\overrightarrow{\alpha}\ $y la matriz $P$ es otro vector de
@@ -93,7 +93,7 @@ cuando se conozca la distribución de probabilidad de estado en el paso
 $n$, es posible calcular la distribución de probabilidad de estado en el
 paso $n + 1$, como sigue:
 
-$${\overrightarrow{\pi}}^{n + 1} = {\overrightarrow{\pi}}^{n} \bullet P.$$
+$${\overrightarrow{\pi}}^{n + 1} = {\overrightarrow{\pi}}^{n} \bullet P$$
 
 
 ### Ejercicio 1
@@ -111,7 +111,7 @@ $$\mathbf{P} = \begin{bmatrix}
 
 ![Diagrama Ejercicio 1](ATrans1.png)
 
-Supongamos que la cadena se encuentre en el estado $A$ en el paso (u observación) $n$, y determinamos la 
+Supongamos que la cadena se encuentre en el estado $A$ en el paso (u observación) $n$ y determinamos la 
 probabilidad de que se encuentre en cada uno de los estados de $S$ en el paso $n + 1$. De un análisis
 directo del diagrama de transición se obtiene que: 
 
@@ -122,7 +122,7 @@ directo del diagrama de transición se obtiene que:
 -  $P\left\lbrack Z_{n + 1} = C \middle| Z_{n} = A \right\rbrack = 0$ no es posible alcanzar C en un solo paso
 
 
-Estas probabilidades corresponden a los tres elementos de la primera fila de la matriz de transición $P$, y se 
+Estas probabilidades corresponden a los tres elementos de la primera fila de la matriz de transición $P$ y se 
 encuentran en la primera fila porque el estado inicial (el estado $A$) es el primero en el orden.    
 
 El vector inicial de distribución de probabilidad de estado en este ejemplo corresponde a ${\overrightarrow{\pi}}^{n} = (1,0,0)$, 
@@ -130,7 +130,7 @@ el vector que asigna probabilidad 1 al primer estado ($A$) y 0 a los demás, ya 
 
 Si calculamos el producto ${\overrightarrow{\pi}}^{n} \bullet P$ obtenemos:
 
-$${\overrightarrow{\pi}}^{n} \bullet P =  (1,0,0) \bullet \begin{bmatrix}
+${\overrightarrow{\pi}}^{n} \bullet P =  (1,0,0) \bullet \begin{bmatrix}
 1-p & p & 0 \\
 0 & 0 & 1 \\
 1 & 0 & 0\\
@@ -164,7 +164,7 @@ de su forma matricial, ya que se necesita sumar todas las probabilidades de toda
 a cada estado. Por ejemplo, para el primer elemento ${\overrightarrow{\pi}}_{A}^{n + 1}$ del vector, se suma la probabilidad 
 de dos evoluciones:       
 
-- La probabilidad de que la cadena empiece en $A$ (prob. $1/3$) y que no transite a $B$ (prob. $1 - p$);
+- La probabilidad de que la cadena empiece en $A$ (prob. $1/3$) y que no transite a $B$ (prob. $1 - p$)
 
 - La probabilidad de que empiece en $C$ (prob. $1/3$) y transite a $A$ (prob. $1$)
 
@@ -180,15 +180,15 @@ probabilidad de estado, podemos determinar la distribución de
 probabilidad de estado en la observación $n + 2$ usando la misma
 fórmula:
 
-$${\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P.$$
+$${\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P$$
 
 Entonces podemos obtener:
 
-$${\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P = \left( {\overrightarrow{\pi}}^{n} \bullet P \right) \bullet P = {\overrightarrow{\pi}}^{n} \bullet (P \bullet P) = {\overrightarrow{\pi}}^{n} \bullet P^{2}.$$
+$${\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P = \left( {\overrightarrow{\pi}}^{n} \bullet P \right) \bullet P = {\overrightarrow{\pi}}^{n} \bullet (P \bullet P) = {\overrightarrow{\pi}}^{n} \bullet P^{2}$$
 
 Y en general:
 
-$${\overrightarrow{\pi}}^{n + m} = {\overrightarrow{\pi}}^{n} \bullet P^{m}.$$
+$${\overrightarrow{\pi}}^{n + m} = {\overrightarrow{\pi}}^{n} \bullet P^{m}$$
 
 A través de las potencias de la matriz $P$ y de una distribución inicial
 es por ende posible determinar la distribución de probabilidad de estado
@@ -226,7 +226,7 @@ eficiente que la otra en términos del tiempo de cálculo necesario.
 En una línea de producción de gaseosas existen dos máquinas embotelladoras idénticas, cada una con capacidad para
 embotellar 2,000 botellas/hora de funcionamiento. Cada máquina puede sufrir problemas mecánicos, por lo cual cada 
 hora con probabilidad de 0.1 se daña. Si la máquina se daña, podrá ser reparada solo en la noche, cuando la línea 
-termina su actividad. La producción empieza a las 6AM, y termina a las 5PM. ¿Cuál es la probabilidad de que ambas 
+termina su actividad. La producción empieza a las 6 A.M. y termina a las 5 P.M. ¿Cuál es la probabilidad de que ambas 
 máquinas paren en un día? ¿Cuál es el número promedio de botellas procesadas en un día en la línea?
 
 Para la primera pregunta dado que:
@@ -235,9 +235,9 @@ Para la primera pregunta dado que:
 
 - Las máquinas son independientes
 
-- Cuando una máquina para no es reparada en el día
+- Cuando una máquina para, no es reparada en el día
 
-Es posible estudiar el comportamiento de una de ellas, y la probabilidad de que ambas máquinas paren en un día será el cuadrado   |
+Es posible estudiar el comportamiento de una de ellas, y la probabilidad de que ambas máquinas paren en un día será el cuadrado
 de la probabilidad de que una de las máquinas pare.
 
 Definimos la cadena de Markov en tiempo discreto 
@@ -314,7 +314,7 @@ $$P\left\lbrack X(t) = j \middle| X(0) = i \right\rbrack.$$
 
 Observamos que la probabilidad condicional arriba es una función
 continua del tiempo $t$, por ende, el análisis necesita utilizar las
-técnicas del análisis del continuo, es decir límites y derivadas.
+técnicas del análisis del continuo, es decir, límites y derivadas.
 
 Las tasas de transición en la matriz $Q$ corresponden a probabilidades
 cuando el intervalo de tiempo $\lbrack 0,t\rbrack$ es muy pequeño. Es
@@ -327,19 +327,19 @@ exponenciales de los tiempos de permanencia en los estados en las CMTC.
 Recuerde que, por la homogeneidad del proceso, el hecho que en la
 fórmula de arriba aparezcan valores específicos de los tiempos (en este
 caso 0 y $\delta$) no quiere decir que esta relación solo sea válida
-para esa ventana especifica de la evolución del proceso.
+para esa ventana específica de la evolución del proceso.
 
 De esta forma y análogamente al caso discreto, tendremos que, si
 $\overrightarrow{\pi}(0)$ es el vector de la distribución de
 probabilidad de estado en el tiempo 0, la distribución de probabilidad
 de estado en el tiempo $\delta$ será aproximadamente
 
-$$\overrightarrow{\pi}(\delta)\sim\overrightarrow{\pi}(0)Q\delta \Rightarrow \frac{\overrightarrow{\pi}(\delta)}{\delta}\sim\overrightarrow{\pi}(0)Q.$$
+$$\overrightarrow{\pi}(\delta)\sim\overrightarrow{\pi}(0)Q\delta \Rightarrow \frac{\overrightarrow{\pi}(\delta)}{\delta}\sim\overrightarrow{\pi}(0)Q$$
 
 Cuando se considere el límite cuando $\delta \rightarrow 0^{+}$, la
 aproximación arriba se vuelve exacta, como sigue:
 
-$$\lim_{\delta \rightarrow 0^{+}}{\frac{\overrightarrow{\pi}(\delta)}{\delta} = \overrightarrow{\pi}(0)Q}.$$
+$$\lim_{\delta \rightarrow 0^{+}}{\frac{\overrightarrow{\pi}(\delta)}{\delta} = \overrightarrow{\pi}(0)Q}$$
 
 Ahora bien, observamos que el límite en la parte izquierda de la
 ecuación de arriba es exactamente la derivada de la función del tiempo
@@ -354,15 +354,15 @@ probabilidad condicional de que el proceso ocupe el estado dado que
 empezó como especifica $\overrightarrow{\pi}(0)$. Por la forma de la
 ecuación diferencial (nótese que la función incógnita
 $\overrightarrow{\pi}( \bullet )$ aparece en ambos lados), la solución
-involucra funciones exponenciales. Más precisamente, es posible
-demostrar que
+involucra funciones exponenciales. En términos específicos, es posible
+demostrar que:
 
-$$\overrightarrow{\pi}(t) = \overrightarrow{\pi}(0)e^{Qt},$$
+$$\overrightarrow{\pi}(t) = \overrightarrow{\pi}(0)e^{Qt}$$
 
 donde $e^{Qt}$ es el exponencial de la matriz $Qt$. El exponencial de
 una matriz A se define como
 
-$$e^{A} = \sum_{k = 0}^{\infty}\frac{A^{k}}{k!}.$$
+$$e^{A} = \sum_{k = 0}^{\infty}\frac{A^{k}}{k!}$$
 
 Entonces, el análisis transitorio de las cadenas de Markov de tiempo
 continuo se realiza a través del cálculo del exponencial de la matriz de
@@ -439,7 +439,7 @@ El diagrama de transición de esta cadena se ilustra en la siguiente figura:
 ![Diagrama Ejercicio 5](ATrans3.png)
 
 Por ende, el análisis no es sencillo como en el caso anterior, y
-resulta practico utilizar algún software para dicho calculo
+resulta práctico utilizar algún software para dicho cálculo.
 
 
 ```

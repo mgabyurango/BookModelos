@@ -63,11 +63,11 @@ estado 1, y viceversa.
 Considere una cadena de Markov con espacio de estados $S$. Un
 subconjunto de estados $C \subseteq S$ es una **clase comunicante** si:
 
-${\forall\ i \in C,\ j \in C \Rightarrow i \leftrightarrow j\}$
-${\forall\ i \in C,\ i \leftrightarrow j \Rightarrow j \in C}$
+$\forall\ i \in C,\ j \in C \Rightarrow i \leftrightarrow j\$
+$\forall\ i \in C,\ i \leftrightarrow j \Rightarrow j \in C$
 
-Esto es, todos los estados en $C$ se comunican entre sí, y $C$ es un
-conjunto máximo, esto quiere decir que no hay ningún estado
+Es decir, todos los estados en $C$ se comunican entre sí, y $C$ es un
+conjunto máximo, lo que implica que no hay ningún estado
 $k \in S \smallsetminus C$ que se comunique con algún estado en $C$.
 
 ### **Definición 5.1.5:**
@@ -90,7 +90,7 @@ Una cadena de Markov con espacio de estados $S$ es **irreducible** si
 todos sus estados pertenecen a la misma clase comunicante, en otro caso
 se dice que la cadena es reducible.
 
-Además, si la cadena es irreducible la totalidad del espacio de estados
+Además, si la cadena es irreducible, la totalidad del espacio de estados
 es también una clase comunicante cerrada.
 
 ## Estados absorbentes, recurrentes y transitorios
@@ -143,7 +143,7 @@ que el número esperado de visitas a ese estado es infinito.
 Un estado $i \in S$ es **recurrente positivo** si además de ser
 recurrente, el valor esperado del tiempo entre visitas a $i$ es finito.
 
-Esta condición es más fuerte que la anterior ya que a un estado
+Esta condición es más fuerte que la anterior, ya que a un estado
 recurrente se podría volver con probabilidad 1, pero el valor esperado
 de regreso podría ser infinito. Esto sucede especialmente en cadenas con
 espacios de estado infinitos. Por ejemplo, si la cadena representa el
@@ -152,14 +152,14 @@ número de personas en una cola, siempre es posible regresar al estado 0
 posible atenderlas, el tiempo hasta volver a la cola vacía puede ser
 infinito, en valor esperado.
 
-### **Definición 5.3.4:**
+### **Definición 5.3.5:**
 
 Un estado $i \in S$ es **transitorio** si no es recurrente.
 
 La recurrencia es una propiedad que se comparte en la clase comunicante,
 lo que hace más fácil identificar qué estados de una cadena son
 recurrentes o transitorios. Además, si una cadena es finita e
-irreducible se puede garantizar que todos sus estados son recurrentes.
+irreducible, se puede garantizar que todos sus estados son recurrentes.
 
 Adicionalmente, en una cadena absorbente todos los estados que no son
 absorbentes son transitorios, y cada estado absorbente es recurrente.

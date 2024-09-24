@@ -163,14 +163,27 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter8.html"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -404,7 +417,7 @@ document.write(`
 <section id="distribucion-exponencial">
 <h3>Distribución Exponencial<a class="headerlink" href="#distribucion-exponencial" title="Permalink to this heading">#</a></h3>
 <p><strong>Parámetro:</strong>  <span class="math notranslate nohighlight">\(\lambda\)</span>, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de
-medida de este parámetro son de  <span class="math notranslate nohighlight">\(\frac{1}{tiempo}\)</span>; por ejemplo: <span class="math notranslate nohighlight">\(segundos^{−1}\)</span>, <span class="math notranslate nohighlight">\(horas^{−1}\)</span>,<span class="math notranslate nohighlight">\(meses^{−1}\)</span>.</p>
+medida de este parámetro son de  <span class="math notranslate nohighlight">\(\frac{1}{tiempo}\)</span>; por ejemplo: <span class="math notranslate nohighlight">\(segundos^{−1}\)</span>, <span class="math notranslate nohighlight">\(horas^{−1}\)</span>, <span class="math notranslate nohighlight">\(meses^{−1}\)</span>.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -427,7 +440,7 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 </tr>
 </tbody>
 </table>
-<p><strong>Propiedades</strong>: La distribución de probabilidad exponencial cumple con la propiedad de no memoria, definida a continuación.</p>
+<p><strong>Propiedades</strong>: La distribución de probabilidad exponencial cumple con la propiedad de no memoria, definida a continuación:</p>
 <div class="math notranslate nohighlight">
 \[P[X&lt;t|X&gt;s] = P[X&lt;t-s] \forall t&gt;s\ge 0 \]</div>
 </section>
@@ -459,7 +472,7 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 </section>
 <section id="distribucion-lognormal">
 <h3>Distribución Lognormal<a class="headerlink" href="#distribucion-lognormal" title="Permalink to this heading">#</a></h3>
-<p>Se dice que <span class="math notranslate nohighlight">\(X\)</span> es una variable aleatoria que sigue una distribución de probabilidad lognormal si el logaritmo de <span class="math notranslate nohighlight">\(X\)</span> es una variable siguen una distribución normal con parámetros <span class="math notranslate nohighlight">\(\mu\)</span> y <span class="math notranslate nohighlight">\(\\sigma\)</span>. Estos dos valores también son los <strong>parámetros</strong> de la distribución lognormal.</p>
+<p>Se dice que <span class="math notranslate nohighlight">\(X\)</span> es una variable aleatoria que sigue una distribución de probabilidad lognormal si el logaritmo de <span class="math notranslate nohighlight">\(X\)</span> es una variable que sigue una distribución normal con parámetros <span class="math notranslate nohighlight">\(\mu\)</span> y <span class="math notranslate nohighlight">\(\\sigma\)</span>. Estos dos valores también son los <strong>parámetros</strong> de la distribución lognormal.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -513,8 +526,8 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 </section>
 <section id="distribucion-erlang">
 <h3>Distribución Erlang<a class="headerlink" href="#distribucion-erlang" title="Permalink to this heading">#</a></h3>
-<p>Se define <span class="math notranslate nohighlight">\(X\)</span> como una variable aleatoria que sigue una distribución Erlang si constituye una suma de <em>K</em> variables aleatorias distribuidas exponencialmente con el mismo parámetro  , y estas son independientes entre sí. Los parámetros de la distribución Erlang son  (cantidad de variables aleatorias exponenciales que se suman) y  (parámetro de cada una de esas variables aleatorias).</p>
-<p>Sea <span class="math notranslate nohighlight">\(Y_{i}\)</span> un conjunto de variables aleatoria distribuidas exponencialmente con parámetro <span class="math notranslate nohighlight">\(\lambda\)</span>. <span class="math notranslate nohighlight">\(Y_{i}\)</span> son <strong>iid</strong> (independientes e idénticamente distribuidas).</p>
+<p>Se define <span class="math notranslate nohighlight">\(X\)</span> como una variable aleatoria que sigue una distribución Erlang si constituye una suma de <em>K</em> variables aleatorias distribuidas exponencialmente con el mismo parámetro, y estas son independientes entre sí. Los parámetros de la distribución Erlang son  (cantidad de variables aleatorias exponenciales que se suman) y  (parámetro de cada una de esas variables aleatorias).</p>
+<p>Sea <span class="math notranslate nohighlight">\(Y_{i}\)</span> un conjunto de variables aleatorias distribuidas exponencialmente con parámetro <span class="math notranslate nohighlight">\(\lambda\)</span>. <span class="math notranslate nohighlight">\(Y_{i}\)</span> son <strong>iid</strong> (independientes e idénticamente distribuidas).</p>
 <div class="math notranslate nohighlight">
 \[X = \sum_{i=1}^{N} Y_{i}\]</div>
 <div class="math notranslate nohighlight">
@@ -549,7 +562,7 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 <p>Nos interesa utilizar variables aleatorias discretas para modelar la probabilidad de ocurrencia de eventos de interés en el sistema. Entre las distribuciones de probabilidad discretas más utilizadas están la Poisson, Bernoulli, Geométrica, Binomial y Uniforme. A continuación, presentamos las características más relevantes de las distribuciones anteriormente mencionadas.</p>
 <section id="distribucion-poisson">
 <h3>Distribución Poisson<a class="headerlink" href="#distribucion-poisson" title="Permalink to this heading">#</a></h3>
-<p>Una variable aleatoria que siga una distribución de Poisson nos permite conocer la probabilidad que ocurra una cantidad determinada de eventos durante un período de tiempo definido <span class="math notranslate nohighlight">\(t\)</span>. De este modo, el parámetro de esta distribución es <span class="math notranslate nohighlight">\(\lambda\)</span>, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de medida de <span class="math notranslate nohighlight">\(\lambda\)</span> son de  \frac{1}{tiempo}; por ejemplo: <span class="math notranslate nohighlight">\(segundos^{−1}\)</span>, <span class="math notranslate nohighlight">\(horas^{−1}\)</span>,<span class="math notranslate nohighlight">\(meses^{−1}\)</span>.</p>
+<p>Una variable aleatoria que siga una distribución de Poisson nos permite conocer la probabilidad que ocurra una cantidad determinada de eventos durante un período de tiempo definido <span class="math notranslate nohighlight">\(t\)</span>. De este modo, el parámetro de esta distribución es <span class="math notranslate nohighlight">\(\lambda\)</span>, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de medida de <span class="math notranslate nohighlight">\(\lambda\)</span> son de  <span class="math notranslate nohighlight">\(\frac{1}{tiempo}\)</span>; por ejemplo: <span class="math notranslate nohighlight">\(segundos^{−1}\)</span>, <span class="math notranslate nohighlight">\(horas^{−1}\)</span>, <span class="math notranslate nohighlight">\(meses^{−1}\)</span>.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -577,7 +590,7 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 </section>
 <section id="distribucion-bernoulli">
 <h3>Distribución Bernoulli<a class="headerlink" href="#distribucion-bernoulli" title="Permalink to this heading">#</a></h3>
-<p>Sea <span class="math notranslate nohighlight">\(X\)</span> variable aleatoria que mide el resultado de un único experimento con dos posibles resultados: éxito (1) o fracaso (0). Esta variable aleatoria sigue una distribución de probabilidad Bernoulli. Por ende, el único parámetro es <span class="math notranslate nohighlight">\(p\)</span>, que indica la probabilidad de éxito del experimento.</p>
+<p>Sea <span class="math notranslate nohighlight">\(X\)</span> una variable aleatoria que mide el resultado de un único experimento con dos posibles resultados: éxito (1) o fracaso (0). Esta variable aleatoria sigue una distribución de probabilidad Bernoulli. Por ende, el único parámetro es <span class="math notranslate nohighlight">\(p\)</span>, que indica la probabilidad de éxito del experimento.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -604,7 +617,7 @@ medida de este parámetro son de  <span class="math notranslate nohighlight">\(\
 <section id="distribucion-geometrica">
 <h3>Distribución Geométrica<a class="headerlink" href="#distribucion-geometrica" title="Permalink to this heading">#</a></h3>
 <p>Sea <span class="math notranslate nohighlight">\(X\)</span> una variable aleatoria que cuenta el número de intentos necesarios hasta obtener el primer éxito,  de  un  fenómeno  aleatorio  con  dos  posibles  resultados:  éxito  o  fracaso.  Dicha  variable aleatoria sigue una distribución de probabilidad Geométrica.</p>
-<p><strong>Parámetro:</strong> <span class="math notranslate nohighlight">\(p\)</span> , que indica la probabilidad que en cada uno de los intentos el resultado sea exitoso.</p>
+<p><strong>Parámetro:</strong> <span class="math notranslate nohighlight">\(p\)</span>, que indica la probabilidad que en cada uno de los intentos el resultado sea exitoso.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>

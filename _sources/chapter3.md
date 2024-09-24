@@ -14,7 +14,7 @@ Las cadenas de Markov son un tipo de proceso estocástico introducido en
 
 Específicamente, una cadena de Markov es un proceso estocástico de
 espacio de estados discreto en el que la evolución futura del proceso
-sólo depende de su estado presente y es independiente de la evolución
+solo depende de su estado presente y es independiente de la evolución
 pasada del proceso. Es decir, es un proceso que cumple con la propiedad
 de no memoria.
 
@@ -194,7 +194,7 @@ es una cadena de Markov de tiempo continuo (CMTC) si cumple que:
 $$P\left\lbrack X(s + t) = j\  \right|\ X(s) = i,\ X(u) = k\rbrack = P\left\lbrack X(s + t) = j\  \right|\ X(s) = i\rbrack\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0 \leq u < s$$
 
 para todos los estados $i,j \in S$ y tiempos $t,s \geq 0$. Es decir,
-éste es un proceso estocástico que tiene la propiedad de no memoria.
+este es un proceso estocástico que tiene la propiedad de no memoria.
 Además, las CMTC pueden ser homogéneas en el tiempo, si cumplen con:
 
 $$P\left\lbrack X(s + t) = j\  \right|\ X(s) = i\rbrack = P\left\lbrack X(t) = j\  \right|\ X(0) = i\rbrack$$
@@ -237,7 +237,7 @@ Ya que el objetivo del diagrama de tasas es presentar los saltos de un
 estado a otro, no existen arcos asociados a $q_{ii}$, pues esto no
 representa un cambio en el estado del modelo (es decir, un diagrama de
 tasas no tiene arcos con la cabeza y la cola en el mismo nodo), pero
-dentro de la matriz si debe existir un valor, tal como se observa en la
+dentro de la matriz sí debe existir un valor, tal como se observa en la
 ecuación 1. Este elemento $q_{ii}$, asociado al tiempo de permanencia en
 el estado $\forall i \in S$, se encuentra como:
 
@@ -246,7 +246,7 @@ $$q_{ii} = - r_{i} = - \sum_{j \in S}^{}q_{ij}$$
 Lo anterior implica que, en términos prácticos, para una matriz de tasas
 $\mathbf{Q}$, la suma de todas sus filas es igual a 0. Para ejemplificar
 lo anterior, en la figura 4 se muestra el diagrama asociado a la
-siguiente matriz de tasas de transición.
+siguiente matriz de tasas de transición:
 
 $$\mathbf{Q}_{1} = \begin{bmatrix}
  - 3.5 & \ \ \ 2 & \ \ 1.5 \\

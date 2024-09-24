@@ -123,12 +123,12 @@ Determine las probabilidades en estado estable del inventario.
 ```{admonition} Solución Ejemplo
 :class: suggestion
 
-Se define la variable como
+Se define la variable como:
 $X_{n} = El\ número\ de\ televisores\ en\ inventario\ al\ principio\ de\ la\ n - \text{ésima semana}$.
 Por lo que el espacio de estados es $S = \{ 1,2,3\}$. Este no contiene
 el 0, dado que, al definir el periodo de observación de la variable al
 inicio de la semana, si el domingo no hay unidades en el inventario, se
-pedirán 3 unidades hasta saturar el sistema. En caso que haya una o más
+pedirán 3 unidades hasta saturar el sistema. En caso de que haya una o más
 unidades en inventario al final de la semana (domingo), no se pedirán
 unidades. Esto muestra que, de acuerdo con la definición de la
 temporalidad de $X_{n}$, el estado $X_{n} = 0$ nunca se observará.
@@ -269,7 +269,7 @@ $X(t) = \ El\ número\ de\ personas\ en\ el\ banco\ en\ cualquier\ momento\ t$.
 Considerando que como máximo se pueden estar atendiendo dos personas,
 más la que se encuentra en la fila, el espacio de estados se define como
 $S = \{ 0,1,2,3\}$. Ahora, aplicando el concepto de mínimo de
-exponenciales (visto en la lectura *2-Procesos de Poisson*), y usando la
+exponenciales (visto en la lectura *3-Procesos de Poisson*), y usando la
 tasa de llegada y la tasa de atención, se sabe entonces que la matriz
 generadora se puede representar como:
 
@@ -355,7 +355,7 @@ $$5\pi_{1} - 25\pi_{2} + 20\pi_{3} = 0$$
 
 $$5\pi_{2} - 20\pi_{3} = 0$$
 
-Aparte se debe agregar la ecuación de normalización:
+Aparte, se debe agregar la ecuación de normalización:
 
 $$\pi_{0} + \pi_{1} + \pi_{2} + \pi_{3} = 1$$
 
