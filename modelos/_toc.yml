@@ -10,6 +10,7 @@ parts:
     sections:
     - file: Distribuciones mas utilizadas
     - file: chapter1
+
   - file: Modulo2
     sections:
     - file: chapter2
@@ -35,4 +36,3 @@ parts:
     - file: chapter17
     - file: Semana 15
     - file: chapter18
-- caption: Complementarias
