@@ -551,19 +551,38 @@ document.write(`
 </h3><p>En Python los paquetes deben ser instalados cuando estos no están presentes en el computador, y también se deben cargar en cada sesión, para eso se debe utilizar el siguiente comando:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># %pip install jmarkov #Instalar la libreria</span>
-<span class="kn">import</span> <span class="nn">jmarkov</span>      <span class="c1">#Importar la libreria</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instalar la librería si no está instalada</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jmarkov
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># %pip install jmarkov #Instalar la libreria</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">jmarkov</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;jmarkov&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting jmarkov
+  Using cached jmarkov-0.0.1-py3-none-any.whl (17 kB)
+Requirement already satisfied: scipy in c:\users\lrios\anaconda3\lib\site-packages (from jmarkov) (1.10.0)
+Collecting typing
+  Using cached typing-3.7.4.3.tar.gz (78 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status &#39;done&#39;
+Requirement already satisfied: numpy in c:\users\lrios\anaconda3\lib\site-packages (from jmarkov) (1.23.5)
+Building wheels for collected packages: typing
+  Building wheel for typing (setup.py): started
+  Building wheel for typing (setup.py): finished with status &#39;done&#39;
+  Created wheel for typing: filename=typing-3.7.4.3-py3-none-any.whl size=26325 sha256=7e0790d132f1041fd17d79b9d731d2e62b9caf06b054db0e80a564ed55707a90
+  Stored in directory: c:\users\lrios\appdata\local\pip\cache\wheels\e5\23\95\593222493ec6253200e94e4a5ee4361d12112000816d840434
+Successfully built typing
+Installing collected packages: typing, jmarkov
+Successfully installed jmarkov-0.0.1 typing-3.7.4.3
+</pre></div>
+</div>
+</div>
+</div>
+<p>O también abriendo el CMD en su computador y ejecutando el comando <u><em>pip install nombreLibreria</em></u></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># %pip install jmarkov #Instalar la libreria</span>
+<span class="kn">import</span> <span class="nn">jmarkov</span>      <span class="c1">#Importar la libreria</span>
 </pre></div>
 </div>
 </div>
@@ -625,7 +644,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2e756a4148179d01caa4c2a6646617f0594d2f3935201419628706e3c01af5cf.png" src="_images/2e756a4148179d01caa4c2a6646617f0594d2f3935201419628706e3c01af5cf.png" />
+<img alt="_images/6fa4fadd570aa4aa4d6e668b07aa5cb321f80fcc82ba1793150580bf1357c13b.png" src="_images/6fa4fadd570aa4aa4d6e668b07aa5cb321f80fcc82ba1793150580bf1357c13b.png" />
 </div>
 </div>
 <h3 style="color: #ADD8E6;">Recorridos o ciclos
@@ -638,14 +657,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">34</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">secuencia</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="c1"># Código a ejecutar para cada elemento en la secuencia</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">TODO</span>
-
-<span class="ne">NameError</span>: name &#39;secuencia&#39; is not defined
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+    <span class="c1"># Código a ejecutar para cada elemento en la secuencia</span>
+                                                          <span class="o">^</span>
+<span class="ne">SyntaxError</span>: incomplete input
 </pre></div>
 </div>
 </div>
