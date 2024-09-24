@@ -9,7 +9,7 @@ Nos interesa utilizar variables aleatorias continuas para modelar los tiempos de
 ### Distribución Exponencial 
 
 **Parámetro:**  $\lambda$, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de 
-medida de este parámetro son de  $\frac{1}{tiempo}$; por ejemplo: $segundos^{−1}$, $horas^{−1}$,$meses^{−1}$. 
+medida de este parámetro son de  $\frac{1}{tiempo}$; por ejemplo: $segundos^{−1}$, $horas^{−1}$, $meses^{−1}$. 
 
 |                                                |  |                                                                                        |
 |------------------------------------------------|--|----------------------------------------------------------------------------------------|
@@ -18,7 +18,7 @@ medida de este parámetro son de  $\frac{1}{tiempo}$; por ejemplo: $segundos^{�
 |**Varianza:** $Var[X]=\frac{1}{\lambda ^{2}}  $ |  |                                                                                        |
 
 
-**Propiedades**: La distribución de probabilidad exponencial cumple con la propiedad de no memoria, definida a continuación. 
+**Propiedades**: La distribución de probabilidad exponencial cumple con la propiedad de no memoria, definida a continuación: 
 
 $$P[X<t|X>s] = P[X<t-s] \forall t>s\ge 0 $$
 
@@ -35,7 +35,7 @@ $$P[X<t|X>s] = P[X<t-s] \forall t>s\ge 0 $$
 
 ### Distribución Lognormal 
 
-Se dice que $X$ es una variable aleatoria que sigue una distribución de probabilidad lognormal si el logaritmo de $X$ es una variable siguen una distribución normal con parámetros $\mu$ y $\\sigma$. Estos dos valores también son los **parámetros** de la distribución lognormal. 
+Se dice que $X$ es una variable aleatoria que sigue una distribución de probabilidad lognormal si el logaritmo de $X$ es una variable que sigue una distribución normal con parámetros $\mu$ y $\\sigma$. Estos dos valores también son los **parámetros** de la distribución lognormal. 
 
 |                                                               |  |                                                                                        |
 |---------------------------------------------------------------|--|----------------------------------------------------------------------------------------|
@@ -62,9 +62,9 @@ A continuación, se presenta el histograma de frecuencias para una variable alea
 
 ### Distribución Erlang 
 
-Se define $X$ como una variable aleatoria que sigue una distribución Erlang si constituye una suma de *K* variables aleatorias distribuidas exponencialmente con el mismo parámetro  , y estas son independientes entre sí. Los parámetros de la distribución Erlang son  (cantidad de variables aleatorias exponenciales que se suman) y  (parámetro de cada una de esas variables aleatorias). 
+Se define $X$ como una variable aleatoria que sigue una distribución Erlang si constituye una suma de *K* variables aleatorias distribuidas exponencialmente con el mismo parámetro, y estas son independientes entre sí. Los parámetros de la distribución Erlang son  (cantidad de variables aleatorias exponenciales que se suman) y  (parámetro de cada una de esas variables aleatorias). 
 
-Sea $Y_{i}$ un conjunto de variables aleatoria distribuidas exponencialmente con parámetro $\lambda$. $Y_{i}$ son **iid** (independientes e idénticamente distribuidas). 
+Sea $Y_{i}$ un conjunto de variables aleatorias distribuidas exponencialmente con parámetro $\lambda$. $Y_{i}$ son **iid** (independientes e idénticamente distribuidas). 
 
 $$X = \sum_{i=1}^{N} Y_{i}$$
 $$X~Erlang(k=N, \lambda)$$
@@ -83,7 +83,7 @@ Nos interesa utilizar variables aleatorias discretas para modelar la probabilida
 
 ### Distribución Poisson 
 
-Una variable aleatoria que siga una distribución de Poisson nos permite conocer la probabilidad que ocurra una cantidad determinada de eventos durante un período de tiempo definido $t$. De este modo, el parámetro de esta distribución es $\lambda$, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de medida de $\lambda$ son de  \frac{1}{tiempo}; por ejemplo: $segundos^{−1}$, $horas^{−1}$,$meses^{−1}$.
+Una variable aleatoria que siga una distribución de Poisson nos permite conocer la probabilidad que ocurra una cantidad determinada de eventos durante un período de tiempo definido $t$. De este modo, el parámetro de esta distribución es $\lambda$, que indica la tasa de ocurrencia de eventos por unidad de tiempo. Las unidades de medida de $\lambda$ son de  $\frac{1}{tiempo}$; por ejemplo: $segundos^{−1}$, $horas^{−1}$, $meses^{−1}$.
 
 
 |                                                               |  |                                                                                        |
@@ -98,7 +98,7 @@ Una variable aleatoria Poisson nos permite caracterizar el número de eventos qu
 
 ### Distribución Bernoulli 
 
-Sea $X$ variable aleatoria que mide el resultado de un único experimento con dos posibles resultados: éxito (1) o fracaso (0). Esta variable aleatoria sigue una distribución de probabilidad Bernoulli. Por ende, el único parámetro es $p$, que indica la probabilidad de éxito del experimento. 
+Sea $X$ una variable aleatoria que mide el resultado de un único experimento con dos posibles resultados: éxito (1) o fracaso (0). Esta variable aleatoria sigue una distribución de probabilidad Bernoulli. Por ende, el único parámetro es $p$, que indica la probabilidad de éxito del experimento. 
 
 |                                                               |  |                                                                                        |
 |---------------------------------------------------------------|--|----------------------------------------------------------------------------------------|
@@ -110,7 +110,7 @@ Sea $X$ variable aleatoria que mide el resultado de un único experimento con do
 
 Sea $X$ una variable aleatoria que cuenta el número de intentos necesarios hasta obtener el primer éxito,  de  un  fenómeno  aleatorio  con  dos  posibles  resultados:  éxito  o  fracaso.  Dicha  variable aleatoria sigue una distribución de probabilidad Geométrica. 
 
-**Parámetro:** $p$ , que indica la probabilidad que en cada uno de los intentos el resultado sea exitoso. 
+**Parámetro:** $p$, que indica la probabilidad que en cada uno de los intentos el resultado sea exitoso. 
 
 |                                                               |  |                                                                                        |
 |---------------------------------------------------------------|--|----------------------------------------------------------------------------------------|

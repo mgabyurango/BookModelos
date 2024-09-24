@@ -150,7 +150,7 @@ siguiente:
 Preguntémonos cuáles son los elementos de la matriz $\mathbf{M}^{n}$ al
 aumentar el valor de $n$, o sea el número de pasos de evolución.
 
-Abordemos el problema considerando el caso $n = 0$, es decir, cuando la
+Abordemos el problema considerando el caso $n = 0$, es decir cuando la
 cadena no hace ninguna transición y supongamos que el estado inicial de
 la cadena es$\ 1$. En este caso, es fácil entender que obviamente
 $M_{1,1}^{0} = 1$, ya que la cadena visita exactamente 1 vez el estado
@@ -206,7 +206,7 @@ sucesivamente hasta $n$ pasos. En cada paso el número de visitas es 0 o
 estado. En $k\ $pasos de evolución, si la cadena empezó en el estado
 $i$, se encontrará en el estado $j$ con probabilidad $p_{ij}^{k}$, es
 decir, el elemento $i,j$ de la matriz $\mathbf{P}^{k}$. Así que, sumando
-sobre todos los pasos, se obtiene para $M_{ij}^{n}$:
+sobre todos los pasos, se obtiene para $M_{ij}^{n}$
 
 $$M_{ij}^{n} = p_{ij}^{0} + p_{ij} + p_{ij}^{2}\cdots + p_{ij}^{n}$$
 
@@ -233,7 +233,7 @@ el siguiente razonamiento. Dado que la cadena empieza en el estado 1, el
 número de pasos necesarios para alcanzar 2 será:
 
 -   Exactamente igual 1 si la próxima transición de la cadena es de 1 a
-    2, lo cual ocurre con probabilidad $p$.
+    2, lo cual ocurre con probabilidad $p$;
 
 -   Exactamente igual a 1 más el número de pasos necesarios para
     alcanzar el estado 2 a partir de 1, si la cadena queda en el estado
@@ -267,7 +267,7 @@ Si la cadena se encuentra en el estado $i$, visitará el estado $j$ :
 
 -   En 1 solo paso, transitando directamente de $i$ a $j$, con
     probabilidad $p_{ij}$ (si $p_{ij} = 0$, esta opción no será
-    posible).
+    posible);
 
 -   En más pasos, transitando primero (en 1 paso) del estado $i$ a algún
     estado $k \neq j$, lo cual ocurre con probabilidad$\ p_{ik}$, y
@@ -302,7 +302,7 @@ Por la naturaleza continua de este tipo de cadenas, el cálculo de los
 tiempos promedio de ocupación en un intervalo $\lbrack 0,t\rbrack$
 requiere evaluar integrales de la matriz exponencial. Como ya vimos, si
 $\mathbf{Q}$ es la matriz de las tasas de transición de la cadena de
-Markov en tiempo continuo, la matriz:
+Markov en tiempo continuo, la matriz
 
 $$e^{\mathbf{Q}t} = \sum_{j = 0}^{\infty}\frac{{(\mathbf{Q}t)}^{j}}{j!}$$
 
@@ -334,7 +334,7 @@ $m_{i,j}$, es el siguiente:
 -   Si la cadena alcanza $j$ en 1 solo paso, transitando directamente de
     $i$ a $j$, lo cual ocurre con probabilidad $q_{ij}/( - q_{ii})$, el
     tiempo necesario será en promedio $1/q_{ij}$ (si $q_{ij} = 0$, esta
-    opción no será posible).
+    opción no será posible);
 
 -   Si la cadena alcanza $j$ en más pasos, transitando primero (en 1
     paso) del estado $i$ a algún estado $k \neq j$, lo cual ocurre con
@@ -373,7 +373,7 @@ Ya que el promedio es distributivo respecto a la suma se obtiene:
 $$E\left\lbrack Z_{0} + Z_{1} + \cdots + Z_{n} \middle| X_{0} = i\  \right\rbrack = \sum_{k = 0}^{n}{E\left\lbrack Z_{k} \middle| X_{0} = i\  \right\rbrack}$$
 
 Dado que $Z_{k}$ toma sólo valores 0 y 1, las contribuciones al promedio
-solo existirán cuando el valor de la variable sea 1, así que se obtiene:
+solo existirán cuando el valor de la variable sea 1, así que se obtiene
 
 $$\sum_{k = 0}^{n}{E\left\lbrack Z_{k} \middle| X_{0} = i\  \right\rbrack} = \sum_{k = 0}^{n}{P\left\lbrack Z_{k} = 1 \middle| X_{0} = i\  \right\rbrack}$$
 
@@ -398,6 +398,6 @@ obtenemos la siguiente expresión:
 Si como en el caso anterior se denota con $1/r_{i} = - 1/q_{ii}$ (nótese
 que $q_{ii}$ es negativo por definición) el tiempo promedio que la
 cadena pasa en el estado $i$, podemos finalmente escribir la expresión
-(5) como sigue:
+(5) como sigue
 
 $$m_{i,j} = \frac{1}{r_{i}}\  + \sum_{k \neq j}^{}{(\frac{1}{r_{i}} +}\frac{q_{ik}}{r_{i}}m_{k,j}) = \frac{1}{r_{i}}\ \left( 1 + \sum_{k \neq j}^{}{q_{ik}m_{k,j}} \right)$$

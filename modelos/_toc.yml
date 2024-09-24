@@ -8,7 +8,7 @@ parts:
   chapters:
   - file: Modulo1
     sections:
-    - file: Distribuciones mas utilizadas
+    - file: Distribuciones_mas_utilizadas
     - file: chapter1
 
   - file: Modulo2

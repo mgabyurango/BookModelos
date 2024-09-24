@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Probabilidades en estado estable" href="chapter6.html" />
+    <link rel="prev" title="Análisis transitorio de cadenas de Markov" href="chapter4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,20 +159,33 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecturas Semanales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo1.html"><span style="color:#A62465">Módulo 1: Introducción (Semana 1)</span></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html"><span style="color:#A62465">Procesos estocásticos</span></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter8.html"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -384,7 +399,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-2"><strong>Definición 5.3.2:</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-3"><strong>Definición 5.3.3:</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-4"><strong>Definición 5.3.4:</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Definición 5.3.4:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-5"><strong>Definición 5.3.5:</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#periodo-de-un-estado-en-cmtds">Periodo de un estado en CMTDs</a><ul class="nav section-nav flex-column">
@@ -465,10 +480,10 @@ estado 1, y viceversa.</p>
 <h3><strong>Definición 5.1.4:</strong><a class="headerlink" href="#definicion-5-1-4" title="Permalink to this heading">#</a></h3>
 <p>Considere una cadena de Markov con espacio de estados <span class="math notranslate nohighlight">\(S\)</span>. Un
 subconjunto de estados <span class="math notranslate nohighlight">\(C \subseteq S\)</span> es una <strong>clase comunicante</strong> si:</p>
-<p><span class="math notranslate nohighlight">\({\forall\ i \in C,\ j \in C \Rightarrow i \leftrightarrow j\}\)</span>
-<span class="math notranslate nohighlight">\({\forall\ i \in C,\ i \leftrightarrow j \Rightarrow j \in C}\)</span></p>
-<p>Esto es, todos los estados en <span class="math notranslate nohighlight">\(C\)</span> se comunican entre sí, y <span class="math notranslate nohighlight">\(C\)</span> es un
-conjunto máximo, esto quiere decir que no hay ningún estado
+<p><span class="math notranslate nohighlight">\(\forall\ i \in C,\ j \in C \Rightarrow i \leftrightarrow j\$
+\)</span>\forall\ i \in C,\ i \leftrightarrow j \Rightarrow j \in C$</p>
+<p>Es decir, todos los estados en <span class="math notranslate nohighlight">\(C\)</span> se comunican entre sí, y <span class="math notranslate nohighlight">\(C\)</span> es un
+conjunto máximo, lo que implica que no hay ningún estado
 <span class="math notranslate nohighlight">\(k \in S \smallsetminus C\)</span> que se comunique con algún estado en <span class="math notranslate nohighlight">\(C\)</span>.</p>
 </section>
 <section id="definicion-5-1-5">
@@ -489,7 +504,7 @@ alcanzable desde alguno de los estados en la clase comunicante.</p>
 <p>Una cadena de Markov con espacio de estados <span class="math notranslate nohighlight">\(S\)</span> es <strong>irreducible</strong> si
 todos sus estados pertenecen a la misma clase comunicante, en otro caso
 se dice que la cadena es reducible.</p>
-<p>Además, si la cadena es irreducible la totalidad del espacio de estados
+<p>Además, si la cadena es irreducible, la totalidad del espacio de estados
 es también una clase comunicante cerrada.</p>
 </section>
 </section>
@@ -538,7 +553,7 @@ que el número esperado de visitas a ese estado es infinito.</p>
 <h3><strong>Definición 5.3.4:</strong><a class="headerlink" href="#definicion-5-3-4" title="Permalink to this heading">#</a></h3>
 <p>Un estado <span class="math notranslate nohighlight">\(i \in S\)</span> es <strong>recurrente positivo</strong> si además de ser
 recurrente, el valor esperado del tiempo entre visitas a <span class="math notranslate nohighlight">\(i\)</span> es finito.</p>
-<p>Esta condición es más fuerte que la anterior ya que a un estado
+<p>Esta condición es más fuerte que la anterior, ya que a un estado
 recurrente se podría volver con probabilidad 1, pero el valor esperado
 de regreso podría ser infinito. Esto sucede especialmente en cadenas con
 espacios de estado infinitos. Por ejemplo, si la cadena representa el
@@ -547,13 +562,13 @@ número de personas en una cola, siempre es posible regresar al estado 0
 posible atenderlas, el tiempo hasta volver a la cola vacía puede ser
 infinito, en valor esperado.</p>
 </section>
-<section id="id1">
-<h3><strong>Definición 5.3.4:</strong><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<section id="definicion-5-3-5">
+<h3><strong>Definición 5.3.5:</strong><a class="headerlink" href="#definicion-5-3-5" title="Permalink to this heading">#</a></h3>
 <p>Un estado <span class="math notranslate nohighlight">\(i \in S\)</span> es <strong>transitorio</strong> si no es recurrente.</p>
 <p>La recurrencia es una propiedad que se comparte en la clase comunicante,
 lo que hace más fácil identificar qué estados de una cadena son
 recurrentes o transitorios. Además, si una cadena es finita e
-irreducible se puede garantizar que todos sus estados son recurrentes.</p>
+irreducible, se puede garantizar que todos sus estados son recurrentes.</p>
 <p>Adicionalmente, en una cadena absorbente todos los estados que no son
 absorbentes son transitorios, y cada estado absorbente es recurrente.</p>
 </section>
@@ -652,6 +667,24 @@ el tiempo.</p>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter6.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span style="color:#008380">Probabilidades en estado estable</span></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -687,7 +720,7 @@ el tiempo.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-2"><strong>Definición 5.3.2:</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-3"><strong>Definición 5.3.3:</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-4"><strong>Definición 5.3.4:</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Definición 5.3.4:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definicion-5-3-5"><strong>Definición 5.3.5:</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#periodo-de-un-estado-en-cmtds">Periodo de un estado en CMTDs</a><ul class="nav section-nav flex-column">

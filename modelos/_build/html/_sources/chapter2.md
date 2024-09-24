@@ -34,7 +34,7 @@ independientes entre sí, cada una con distribución exponencial de
 parámetro $\lambda$, es decir $X_{i}\sim Exp(\lambda)$, $i > 0$.
 Definimos $S_{0} = 0$ y $S_{n} = \sum_{i = 1}^{n}X_{i}$, $n > 0$. Por
 cada $n,\ \ n > 0$, el valor de $S_{n}$ corresponde al tiempo de
-ocurrencia del $n$-esimo tiempo exponencial de la secuencia, y $S_{n}$
+ocurrencia del $n$-ésimo tiempo exponencial de la secuencia, y $S_{n}$
 es una secuencia de tiempos creciente en $n$. Si se define
 $N(t) = \max\left\{ n\  \right|\ S_{n} \leq t\}$, entonces
 $\{ N(t),t \geq 0\}$ es un proceso de Poisson, de parámetro $\lambda$,
@@ -71,7 +71,7 @@ disciplinas como biología, economía y física.
 Como se mencionó, el Proceso de Poisson es aplicado en el modelamiento
 de diferentes sistemas donde la distribución exponencial representa el
 tiempo entre eventos que ocurren en el sistema. Por este motivo, la
-distribución exponencial es ampliamente estudiada ya que sus propiedades
+distribución exponencial es ampliamente estudiada debido a que sus propiedades
 ayudan a entender cómo se comportan estos sistemas.
 
 ##### **Definición 2.2.1:**
@@ -92,8 +92,8 @@ es $F_{T}(t) = 1 - e^{- \lambda t},\ t \geq 0$.
 
 Dado que la distribución exponencial es una función continua, se tiene
 que
-$F_{T}(t) = P(T \leq t) = \int_{0}^{t}{\lambda e^{- \lambda s}ds\ }$.
-Por lo que se tiene que
+$F_{T}(t) = P(T \leq t) = \int_{0}^{t}{\lambda e^{- \lambda s}ds\ }$
+Por lo que se tiene que:
 
 $$\int_{0}^{t}{\lambda e^{- \lambda s}ds\ } = {- e}^{- \lambda s}|_{0}^{t} = {- e}^{- \lambda t} - \left( - e^{0} \right) = 1 - e^{- \lambda t}$$
 
@@ -131,7 +131,7 @@ $\frac{1}{2}$ cliente por minuto. Dada esta información, calcule:
 
 **Solución:** denotamos con $T$ la variable aleatoria tiempo entre
 llegadas. Dado que la llegada de clientes sigue un
-$PP\left( \lambda = \frac{1}{2} \right)$ entonces el tiempo entre
+$PP\left( \lambda = \frac{1}{2} \right)$, entonces el tiempo entre
 llegadas de clientes $T\ $ se distribuye
 $\exp\left( \lambda = \frac{1}{2} \right)$. Así que:
 
@@ -143,19 +143,19 @@ c)  $P(1 \leq T \leq 2) = F(2) - F(1) = \left( 1 - e^{- \frac{1}{2} \cdot 2} \ri
 
 d)  $E\lbrack T\rbrack = \frac{1}{\lambda} = \frac{1}{\frac{1}{2}} = 2\ \text{min},\ \ Var(T) = \frac{1}{\lambda^{2}} = \frac{1}{\left( \frac{1}{2} \right)^{2}} = 4{\ \text{min}}^{2}\ $
 
-## Propiedades de la distribución Exponencial
+## Propiedades de la Distribución Exponencial
 
 ### **Propiedad 2.3.1 (No memoria):** 
 
 Sea $T\sim\exp(\lambda)$ entonces $\forall\ t,s \geq 0$ se tiene que
-$P\left( T > t + s\  \middle| \ T > s \right) = P(T > t)$.
+$P\left( T > t + s\  \middle| \ T > s \right) = P(T > t)$
 
 ### ***Demostración***
 
 Dado que $T\sim\exp(\lambda)$ entonces
-$P\left( T > t + s\  \middle| \ T > s \right) = \frac{P(T > t + s,\ \ T > s)}{P(T > s)} = \frac{P(T > t + s)}{P(T > s)} = \frac{e^{- (t + s)\lambda}}{e^{- s\lambda}}$.
+$P\left( T > t + s\  \middle| \ T > s \right) = \frac{P(T > t + s,\ \ T > s)}{P(T > s)} = \frac{P(T > t + s)}{P(T > s)} = \frac{e^{- (t + s)\lambda}}{e^{- s\lambda}}$
 Por propiedades de exponentes entonces se tiene que
-$\frac{e^{- (t + s)\lambda}}{e^{- s\lambda}} = e^{- (t + s)\lambda - ( - s\lambda)} = e^{- t\lambda} = P(T > t)$.
+$\frac{e^{- (t + s)\lambda}}{e^{- s\lambda}} = e^{- (t + s)\lambda - ( - s\lambda)} = e^{- t\lambda} = P(T > t)$
 
 Suponga que la variable aleatoria $T$ representa un tiempo, por ejemplo,
 el tiempo que toma realizar un ensamblaje en una estación de trabajo. La
@@ -175,19 +175,19 @@ cuenta con esta propiedad.
 ### **Propiedad 2.3.2:**
 
 Sea $X\sim\exp(\lambda)\ y$ $Y\sim\exp(\mu)$ independientes y
-$Z = min(X,Y)$, entonces $Z\sim exp(\lambda + \mu)$.
+$Z = min(X,Y)$, entonces $Z\sim exp(\lambda + \mu)$
 
 ### ***Demostración***
 
 Dado que $X\sim\exp(\lambda)$, $Y\sim\exp(\mu)$ entonces
 $P(Z > t) = P\left( \min(X,Y) > T \right) = P(X > t,Y > t)$ y como
-$X\ y\ Y$ son independientes entonces
+$X\ y\ Y$ son independientes entonces:
 $P(X > t,Y > t) = P(X > t)P(Y > t) = e^{- \lambda t}e^{- \mu t} = e^{- (\lambda + \mu)t}$
 
 Si se extiende la propiedad a que
 $X_{1}\sim\exp\left( \lambda_{1} \right),\ldots,\ X_{n}\sim exp(\lambda_{n})$
 y $Z = min(X_{1},\ldots,X_{n})$ entonces
-$Z\sim exp(\lambda_{1} + \ldots + \lambda_{n})$.
+$Z\sim exp(\lambda_{1} + \ldots + \lambda_{n})$
 
 Esta propiedad nos permite calcular probabilidades cuando varias tareas
 se encuentran en ejecución en paralelo, todas con tiempos que siguen una
@@ -205,20 +205,20 @@ es la suma de las tasas del tiempo de cada llamada.
 ### **Propiedad 2.3.3:**
 
 Sea $X\sim\exp(\lambda)\ y$ $Y\sim\exp(\mu)$ independientes, entonces
-$P(X < Y) = \frac{\lambda}{\lambda + \mu}$.
+$P(X < Y) = \frac{\lambda}{\lambda + \mu}$
 
 ### ***Demostración***
 
-Para demostrar que $P(X < Y)$ hay que demostrar que para todo valor de
+Para establecer que $P(X < Y)$ es necesario demostrar que para todo valor de
 $t$ la variable aleatoria $X$ debe ser menor que la variable aleatoria
-$Y$. Para esto se sabe que
+$Y$. Para esto se sabe que:
 $P(X < Y) = \int_{0}^{\infty}{P\left( X < Y \middle| X = t \right)\lambda e^{- \lambda t}dt} = \int_{0}^{\infty}{P(t < Y)\lambda e^{- \lambda t}dt} = \int_{0}^{\infty}{e^{- \mu t}\lambda e^{- \lambda t}dt} =$
-$\lambda\int_{0}^{\infty}{e^{- (\lambda + \mu)t}dt} = \lambda*\  - \frac{e^{- (\lambda + \mu)t}}{\lambda + \mu}|_{0}^{\infty} = 0 + \frac{\lambda}{\lambda + \mu} = \frac{\lambda}{\lambda + \mu}$
+$\lambda\int_{0}^{\infty}{e^{- (\lambda + \mu)t}dt} = \lambda*\  - \frac{e^{- (\lambda + \mu)t}}{\lambda + \mu}|_{0}^{\infty} = 0 + \frac{\lambda}{\lambda + \mu} = \frac{\lambda}{\lambda + \mu}$.
 
 Si se extiende la propiedad a que
 $X_{1}\sim\exp\left( \lambda_{1} \right),\ldots,\ X_{n}\sim exp(\lambda_{n})$
 y se desea calcular $P(X_{i} < X_{1},\ldots,X_{n}\ )$ entonces
-$P\left( X_{i} < X_{1},\ldots,X_{n}\  \right) = \frac{\lambda_{i}}{\lambda_{1} + \ldots + \lambda_{n}}.$
+$P\left( X_{i} < X_{1},\ldots,X_{n}\  \right) = \frac{\lambda_{i}}{\lambda_{1} + \ldots + \lambda_{n}}$
 
 La Propiedad 2.3.3. también es útil cuando tenemos tareas que se
 ejecutan en paralelo. En el ejemplo anterior de los dos agentes en un
@@ -269,7 +269,7 @@ intervalo $\lbrack 0,t\rbrack$ sea igual a un valor entero no-negativo
 $n \geq 0$, es decir $P\left\lbrack N(t) = n \right\rbrack$ se puede
 escribir como sigue:
 
-$P\left\lbrack N(t) = n \right\rbrack = P\left\lbrack N(t) < n + 1 \right\rbrack - P\left\lbrack N(t) < n \right\rbrack$.
+$P\left\lbrack N(t) = n \right\rbrack = P\left\lbrack N(t) < n + 1 \right\rbrack - P\left\lbrack N(t) < n \right\rbrack$
 
 La igualdad anterior resulta de la definición de la distribución
 acumulada para variables discretas: la resta de probabilidades en el
@@ -281,10 +281,10 @@ escribir lo anterior como sigue:
 
 $$P\left\lbrack N(t) < n + 1 \right\rbrack - P\left\lbrack N(t) < n \right\rbrack = 1 - P\left\lbrack N(t) \geq n + 1 \right\rbrack - \left( 1 - P\left\lbrack N(t) \geq n \right\rbrack \right) =$$
 
-$= P\left\lbrack N(t) \geq n \right\rbrack - P\left\lbrack N(t) \geq n + 1 \right\rbrack$.
+$= P\left\lbrack N(t) \geq n \right\rbrack - P\left\lbrack N(t) \geq n + 1 \right\rbrack$
 
 Observamos ahora que si en el intervalo $\lbrack 0,t\rbrack$ se observan
-al menos $n$ eventos, entonces el tiempo de ocurrencia del $n$-esimo
+al menos $n$ eventos, entonces el tiempo de ocurrencia del $n$-ésimo
 evento debe ser menor o igual a $t$, es decir que
 $P\left\lbrack N(t) \geq n \right\rbrack = P\lbrack S_{n} \leq t\rbrack$.
 Por lo tanto, podemos escribir lo siguiente:
@@ -303,9 +303,9 @@ Por lo cual podemos escribir la diferencia anterior como sigue:
 
 $$P\left\lbrack S_{n} \leq t \right\rbrack - P\left\lbrack S_{n + 1} \leq t \right\rbrack = 1 - e^{- \lambda t}\sum_{j = 1}^{n - 1}\frac{(\lambda t)^{j}}{j!} - \left( 1 - e^{- \lambda t}\sum_{j = 1}^{n}\frac{(\lambda t)^{j}}{j!} \right) =$$
 
-$= e^{- \lambda t}\sum_{j = 1}^{n}\frac{(\lambda t)^{j}}{j!} - e^{- \lambda t}\sum_{j = 1}^{n - 1}\frac{(\lambda t)^{j}}{j!} = e^{- \lambda t}\frac{{(\lambda t)}^{n}}{n!}$.
+$= e^{- \lambda t}\sum_{j = 1}^{n}\frac{(\lambda t)^{j}}{j!} - e^{- \lambda t}\sum_{j = 1}^{n - 1}\frac{(\lambda t)^{j}}{j!} = e^{- \lambda t}\frac{{(\lambda t)}^{n}}{n!}$
 
-Entonces se obteniendo que:
+Entonces se obtiene que:
 
 $P\left\lbrack N(t) = n \right\rbrack = e^{- \lambda t}\frac{{(\lambda t)}^{n}}{n!}$,
 
@@ -315,7 +315,7 @@ o sea $N(t)\sim Poisson(\lambda t)$
 
 Si $\{ N(t),t \geq 0\}$ es un proceso de Poisson con parámetro $\lambda$
 entonces para cualquier
-$0 \leq s \leq t \leq u \leq v\ \text{e}\ i,j \geq 0$ se tiene que
+$0 \leq s \leq t \leq u \leq v\ \text{e}\ i,j \geq 0$ se tiene que:
 $P\left( N(v) - N(u) = j|N(t) - N(s) = i \right) = P(N\left( v) - N(u \right) = j)$.
 Lo anterior implica que los eventos no dependen de lo ocurrido
 anteriormente, sino de la ventana temporal en la que se observó el
@@ -335,7 +335,7 @@ importar el momento del tiempo en el que ocurran ($s$).
 
 Sea $S_{n}$ el tiempo de ocurrencia hasta el n-ésimo evento en un
 proceso de Poisson con parámetro $\lambda$, entonces
-$S_{n}\sim Erlang(\lambda,n)$. (Misma propiedad 2.3.4)
+$S_{n}\sim Erlang(\lambda,n)$. (Misma propiedad 2.3.4).
 
 ### **Propiedad 2.4.5 (Combinación de procesos de Poisson):**
 
@@ -345,7 +345,7 @@ independientes entre sí. Si $N(t) = \sum_{i = 1}^{n}{N_{i}(t)}$,
 entonces $\{ N(t),t \geq 0\}$ es un proceso de Poisson con parámetro
 $\lambda = \lambda_{1} + \ldots + \lambda_{n}$. (Misma propiedad 2.3.2).
 
-### **Propiedad 2.4.6:** {#propiedad-2.4.6 .unnumbered}
+### **Propiedad 2.4.6:**
 
 Sea $\left\{ N(t),t \geq 0 \right\}$ un proceso de Poisson con parámetro
 $\lambda$ y suponga que cada evento se puede clasificar en la categoría
@@ -373,7 +373,7 @@ preguntas con la información suministrada:
     comer postre entre las 2:00 pm y las 3:00 pm.
 
 **c)**  Calcule la probabilidad de que entre las 12:00 m y la 1:00 pm
-    lleguen a almorzar 5 clientes dado que se sabe que entre las 11:00
+    lleguen a almorzar 5 clientes, dado que se sabe que entre las 11:00
     am y las 2:00 pm llegaron a almorzar 10 clientes.
 
 **d)**  Calcule la probabilidad de que entre las 2:00 pm y las 3:00 pm

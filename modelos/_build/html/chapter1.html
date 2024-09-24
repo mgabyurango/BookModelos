@@ -165,14 +165,27 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter8.html"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -463,7 +476,7 @@ otro proceso estocástico <span class="math notranslate nohighlight">\(\{ T_{n},
 <div class="suggestion admonition">
 <p class="admonition-title">Ejemplo 2</p>
 <ul class="simple">
-<li><p><strong>Fenómeno aleatorio:</strong> Llegadas de un carro a un parqueadero</p></li>
+<li><p><strong>Fenómeno aleatorio:</strong> Llegadas de un carro a un parqueadero.</p></li>
 <li><p><strong>Variable de interés:</strong> Se busca medir el número de carros en
 el sistema (parqueadero).</p></li>
 <li><p><strong>Conjunto de observación:</strong> La observación se realiza cada vez
@@ -494,7 +507,7 @@ son tiempos, es decir, números reales no-negativos.</p>
 <p>También, es posible observar un sistema en tiempo continuo, es decir en
 cada instante de tiempo, sin precisar la secuencia de instantes en la
 cual se realiza el muestreo (observación) de la variable de interés. En
-el caso del Ejemplo 2 podríamos por ejemplo definir:</p>
+el caso del Ejemplo 2 podríamos entonces definir:</p>
 <div class="suggestion admonition">
 <p class="admonition-title">Ejemplo: Variable de Interés Tiempo Continuo</p>
 <ul class="simple">
@@ -555,7 +568,7 @@ tiempo. Por ejemplo, para el proceso estocástico
 probabilidad <span class="math notranslate nohighlight">\(P\left\lbrack X_{5} = x \right\rbrack\)</span>, es decir, la
 probabilidad de que en el momento <span class="math notranslate nohighlight">\(n = 5\)</span> de observación la variable de
 estado <span class="math notranslate nohighlight">\(X_{5}\)</span> tome el valor <span class="math notranslate nohighlight">\(x\)</span>, donde <span class="math notranslate nohighlight">\(x\)</span> es un valor posible del
-estado del proceso, es decir <span class="math notranslate nohighlight">\(x\ \epsilon\ S\)</span>.También podemos estar
+estado del proceso, es decir <span class="math notranslate nohighlight">\(x\ \epsilon\ S\)</span>. También podemos estar
 interesados en la probabilidad de que esta variable en el momento
 <span class="math notranslate nohighlight">\(n = 5\)</span> tome valores menores o iguales a <span class="math notranslate nohighlight">\(x\)</span>, es decir
 <span class="math notranslate nohighlight">\(P\lbrack X_{5} \leq x\rbrack\)</span>. Por ejemplo, la probabilidad de que el
@@ -600,7 +613,7 @@ discreto/continuo</em>. Si el conjunto de índices <span class="math notranslate
 discreto/continuo, diremos que el proceso estocástico es en <em>tiempo
 discreto/continuo</em>.</p>
 <p>Tal como se resume en la Figura 1, la combinación de las diferentes
-posibilidades hace que puedan definirse cuatro diferentes tipos de
+posibilidades hace que puedan definirse cuatro tipos distintos de
 procesos estocásticos.</p>
 <style>
     table, th, td{
@@ -637,12 +650,12 @@ procesos estocásticos.</p>
       <td>Espacio discreto <br>
       Tiempo discreto</td>
       <td>Espacio discreto <br>
-      Tiempo discreto</td>
+      Tiempo continuo</td>
     </tr>
     <tr>
       <!-- <td>9</td> -->
       <td class="rotate">Continuo</td>
-      <td>Espacio discreto <br>
+      <td>Espacio continuo <br>
       Tiempo discreto</td>
       <td>Espacio continuo <br>
       Tiempo continuo</td>
@@ -681,7 +694,7 @@ instante de tiempo <span class="math notranslate nohighlight">\(t\)</span>.</p><
 </div>
 <p>Para todo proceso estocástico en tiempo continuo el conjunto de índices
 siempre es igual al semieje positivo, y por ende la definición de la
-variable de estado sólo necesita especificar que se observa el sistema
+variable de estado solo necesita especificar que se observa el sistema
 en cada posible valor del tiempo <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <p>Puede que sea posible, conocer el estado del sistema en cada momento del
 tiempo, pero esto puede no ser relevante/necesario. Quizá sea importante
@@ -763,7 +776,7 @@ del estado pasado. Los procesos estocásticos buscan capturar los
 aspectos claves de esta dependencia en el tiempo. Por ejemplo, podemos
 esperar que la dependencia se haga más y más débil conforme aumente la
 separación temporal con respecto a la observación inicial. En el caso
-del precio de un producto, si éste tuvo un valor particular hace mucho
+del precio de un producto, si este tuvo un valor particular hace mucho
 tiempo atrás debería afectar de manera poco significativa el precio de
 mercado presente.</p>
 </section>
@@ -773,7 +786,7 @@ mercado presente.</p>
 continuo <span class="math notranslate nohighlight">\(\left\{ U(t),t \geq 7am \right\}\)</span> cuya variable de espacio es
 definida como:</p>
 <div class="suggestion admonition">
-<p class="admonition-title">Ejemplo 1 Homogeneidad (Variable de Interés)</p>
+<p class="admonition-title">Ejemplo 1: Homogeneidad (Variable de Interés)</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(U(t)\)</span> <span class="math notranslate nohighlight">\(≝\)</span> Número de usuarios que han llegado al restaurante desde la
 apertura hasta el instante de tiempo <span class="math notranslate nohighlight">\(t\)</span></p></li>
@@ -788,7 +801,7 @@ decir, para cada pareja de instantes <span class="math notranslate nohighlight">
 </div></blockquote>
 <p>Es decir, si tomamos como referencia un número de clientes <span class="math notranslate nohighlight">\(u\)</span>, es más
 probable observar más de <span class="math notranslate nohighlight">\(u\)</span> usuarios en el momento <span class="math notranslate nohighlight">\(t_{2}\)</span> que en el
-momento <span class="math notranslate nohighlight">\(t_{1}\)</span> ya que en <span class="math notranslate nohighlight">\(t_{2}\)</span> ha transcurrido más tiempo, lo que da
+momento <span class="math notranslate nohighlight">\(t_{1}\)</span> ya que, en <span class="math notranslate nohighlight">\(t_{2}\)</span> ha transcurrido más tiempo, lo que da
 una mayor oportunidad de observar más usuarios. Es interesante
 preguntarse si la velocidad del crecimiento del valor de la variable de
 estado es constante en el tiempo. Por ejemplo, si en promedio, entre las
@@ -804,8 +817,8 @@ esperado, el mismo número de usuarios en un intervalo de una hora.
 Cuando un proceso estocástico es homogéneo, esta igualdad se cumple para
 todo intervalo de la misma longitud, luego esperamos observar el mismo
 número de usuarios en cualquier intervalo de una hora.</p>
-<p>Si por el contrario si suponemos que el sistema modelado es un
-restaurante, es razonable suponer que a la hora del almuerzo lleguen más
+<p>Si por el contrario asumimos que el sistema modelado es un
+restaurante, es razonable considerar que a la hora del almuerzo lleguen más
 clientes que en otros momentos del día. Así, es probable que la igualdad
 arriba no sea verdadera. Este es un ejemplo de un proceso estocástico no
 homogéneo en el tiempo, ya que la dinámica de cambio de estado no es
@@ -823,16 +836,16 @@ temporal entre las observaciones (el ancho del intervalo
 discreto y en tiempo discreto <span class="math notranslate nohighlight">\(\left\{ S_{n},n \geq 0 \right\}\)</span>, cuya
 variable de estado es definida como:</p>
 <div class="suggestion admonition">
-<p class="admonition-title">Ejemplo 2 Homogeneidad (Variable de Interés)</p>
+<p class="admonition-title">Ejemplo 2: Homogeneidad (Variable de Interés)</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(S_{n}\)</span> <span class="math notranslate nohighlight">\(≝\)</span> Número de sellos obtenidas luego del n-ésimo lanzamiento de
+<li><p><span class="math notranslate nohighlight">\(S_{n}\)</span> <span class="math notranslate nohighlight">\(≝\)</span> Número de sellos obtenidos luego del n-ésimo lanzamiento de
 una moneda.</p></li>
 </ul>
 </div>
 <p>Se puede afirmar que la probabilidad de obtener un número cualquiera de
 sellos <span class="math notranslate nohighlight">\(v\)</span>, no depende del momento en el tiempo en el que se esté
-observando el sistema, si no de la cantidad de lanzamientos que se
-realicen. Éste, es un claro ejemplo de un proceso estocástico homogéneo
+observando el sistema, sino de la cantidad de lanzamientos que se
+realicen. Este, es un claro ejemplo de un proceso estocástico homogéneo
 en tiempo discreto. De forma general, para un proceso estocástico en
 tiempo discreto <span class="math notranslate nohighlight">\(\left\{ X_{n},n \geq 0 \right\}\)</span>, la propiedad de
 homogeneidad se puede describir como:</p>

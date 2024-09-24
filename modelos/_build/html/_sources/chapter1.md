@@ -79,7 +79,7 @@ otro proceso estocástico $\{ T_{n},n \geq 0\}$ .
 ```{admonition} Ejemplo 2
 :class: suggestion
 
--   **Fenómeno aleatorio:** Llegadas de un carro a un parqueadero
+-   **Fenómeno aleatorio:** Llegadas de un carro a un parqueadero.
 
 -   **Variable de interés:** Se busca medir el número de carros en 
     el sistema (parqueadero).
@@ -124,7 +124,7 @@ son tiempos, es decir, números reales no-negativos.
 También, es posible observar un sistema en tiempo continuo, es decir en
 cada instante de tiempo, sin precisar la secuencia de instantes en la
 cual se realiza el muestreo (observación) de la variable de interés. En
-el caso del Ejemplo 2 podríamos por ejemplo definir:
+el caso del Ejemplo 2 podríamos entonces definir:
  
 ```{admonition} Ejemplo: Variable de Interés Tiempo Continuo
 :class: suggestion
@@ -198,7 +198,7 @@ $\left\{ X_{n},n \geq 0 \right\}$, es pertinente preguntar cuál es la
 probabilidad $P\left\lbrack X_{5} = x \right\rbrack$, es decir, la
 probabilidad de que en el momento $n = 5$ de observación la variable de
 estado $X_{5}$ tome el valor $x$, donde $x$ es un valor posible del
-estado del proceso, es decir $x\ \epsilon\ S$.También podemos estar
+estado del proceso, es decir $x\ \epsilon\ S$. También podemos estar
 interesados en la probabilidad de que esta variable en el momento
 $n = 5$ tome valores menores o iguales a $x$, es decir
 $P\lbrack X_{5} \leq x\rbrack$. Por ejemplo, la probabilidad de que el
@@ -255,7 +255,7 @@ discreto/continuo*.
  
  
 Tal como se resume en la Figura 1, la combinación de las diferentes
-posibilidades hace que puedan definirse cuatro diferentes tipos de
+posibilidades hace que puedan definirse cuatro tipos distintos de
 procesos estocásticos.
 
 <style>
@@ -294,12 +294,12 @@ procesos estocásticos.
       <td>Espacio discreto <br>
       Tiempo discreto</td>
       <td>Espacio discreto <br>
-      Tiempo discreto</td>
+      Tiempo continuo</td>
     </tr>
     <tr>
       <!-- <td>9</td> -->
       <td class="rotate">Continuo</td>
-      <td>Espacio discreto <br>
+      <td>Espacio continuo <br>
       Tiempo discreto</td>
       <td>Espacio continuo <br>
       Tiempo continuo</td>
@@ -346,7 +346,7 @@ instante de tiempo $t$.
 
 Para todo proceso estocástico en tiempo continuo el conjunto de índices
 siempre es igual al semieje positivo, y por ende la definición de la
-variable de estado sólo necesita especificar que se observa el sistema
+variable de estado solo necesita especificar que se observa el sistema
 en cada posible valor del tiempo $t$.
 
 Puede que sea posible, conocer el estado del sistema en cada momento del
@@ -437,7 +437,7 @@ del estado pasado. Los procesos estocásticos buscan capturar los
 aspectos claves de esta dependencia en el tiempo. Por ejemplo, podemos
 esperar que la dependencia se haga más y más débil conforme aumente la
 separación temporal con respecto a la observación inicial. En el caso
-del precio de un producto, si éste tuvo un valor particular hace mucho
+del precio de un producto, si este tuvo un valor particular hace mucho
 tiempo atrás debería afectar de manera poco significativa el precio de
 mercado presente.
 
@@ -449,7 +449,7 @@ Consideremos el proceso estocástico con espacio discreto y en tiempo
 continuo $\left\{ U(t),t \geq 7am \right\}$ cuya variable de espacio es
 definida como:
 
-```{admonition} Ejemplo 1 Homogeneidad (Variable de Interés)
+```{admonition} Ejemplo 1: Homogeneidad (Variable de Interés)
 :class: suggestion
 
 -   $U(t)$ $≝$ Número de usuarios que han llegado al restaurante desde la
@@ -465,7 +465,7 @@ $7am\  \leq t_{1} \leq t_{2}$, podemos afirmar que
 
 Es decir, si tomamos como referencia un número de clientes $u$, es más
 probable observar más de $u$ usuarios en el momento $t_{2}$ que en el
-momento $t_{1}$ ya que en $t_{2}$ ha transcurrido más tiempo, lo que da
+momento $t_{1}$ ya que, en $t_{2}$ ha transcurrido más tiempo, lo que da
 una mayor oportunidad de observar más usuarios. Es interesante
 preguntarse si la velocidad del crecimiento del valor de la variable de
 estado es constante en el tiempo. Por ejemplo, si en promedio, entre las
@@ -482,8 +482,8 @@ Cuando un proceso estocástico es homogéneo, esta igualdad se cumple para
 todo intervalo de la misma longitud, luego esperamos observar el mismo
 número de usuarios en cualquier intervalo de una hora.
 
-Si por el contrario si suponemos que el sistema modelado es un
-restaurante, es razonable suponer que a la hora del almuerzo lleguen más
+Si por el contrario asumimos que el sistema modelado es un
+restaurante, es razonable considerar que a la hora del almuerzo lleguen más
 clientes que en otros momentos del día. Así, es probable que la igualdad
 arriba no sea verdadera. Este es un ejemplo de un proceso estocástico no
 homogéneo en el tiempo, ya que la dinámica de cambio de estado no es
@@ -503,17 +503,17 @@ Consideremos ahora el proceso estocástico con espacio de estados
 discreto y en tiempo discreto $\left\{ S_{n},n \geq 0 \right\}$, cuya
 variable de estado es definida como:
 
-```{admonition} Ejemplo 2 Homogeneidad (Variable de Interés)
+```{admonition} Ejemplo 2: Homogeneidad (Variable de Interés)
 :class: suggestion
 
--   $S_{n}$ $≝$ Número de sellos obtenidas luego del n-ésimo lanzamiento de
+-   $S_{n}$ $≝$ Número de sellos obtenidos luego del n-ésimo lanzamiento de
 una moneda.
 ```
 
 Se puede afirmar que la probabilidad de obtener un número cualquiera de
 sellos $v$, no depende del momento en el tiempo en el que se esté
-observando el sistema, si no de la cantidad de lanzamientos que se
-realicen. Éste, es un claro ejemplo de un proceso estocástico homogéneo
+observando el sistema, sino de la cantidad de lanzamientos que se
+realicen. Este, es un claro ejemplo de un proceso estocástico homogéneo
 en tiempo discreto. De forma general, para un proceso estocástico en
 tiempo discreto $\left\{ X_{n},n \geq 0 \right\}$, la propiedad de
 homogeneidad se puede describir como:

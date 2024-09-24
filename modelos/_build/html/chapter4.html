@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Clasificación de estados" href="chapter5.html" />
+    <link rel="prev" title="Cadenas de Markov" href="chapter3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,20 +159,33 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecturas Semanales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo1.html"><span style="color:#A62465">Módulo 1: Introducción (Semana 1)</span></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html"><span style="color:#A62465">Procesos estocásticos</span></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Modulo2.html"><span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html"><span style="color:#008380">Procesos de Poisson</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html"><span style="color:#008380">Cadenas de Markov</span></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><span style="color:#008380">Análisis transitorio de cadenas de Markov</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html"><span style="color:#008380">Clasificación de estados</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html"><span style="color:#008380">Probabilidades en estado estable</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter7.html"><span style="color:#008380">Cadenas embebidas</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter8.html"><span style="color:#008380">Análisis de tiempos promedios</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter9.html"><span style="color:#008380">Cadenas absorbentes: Tiempos antes de la absorción y probabilidades de absorción</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo3.html"><span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter10.html"><span style="color:#E57231">Ley de Little</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11.html"><span style="color:#E57231">Procesos de nacimiento y muerte</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter13.html"><span style="color:#E57231">Redes de Jackson</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter14.html"><span style="color:#E57231">Costos en cadenas de Markov</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Modulo4.html"><span style="color:#4F8F1E">Módulo 4: Toma de decisiones para mejorar el sistema (Semanas 13-16)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter15.html"><span style="color:#4F8F1E">Procesos de decisión en el tiempo</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter16.html"><span style="color:#4F8F1E">Principio de Optimalidad y Ecuaciones de Bellman</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter17.html"><span style="color:#4F8F1E">Programación Dinámica</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter18.html"><span style="color:#4F8F1E">Procesos de Decisión Markovianos</span></a></li>
 </ul>
 </li>
@@ -437,7 +452,7 @@ probabilidades de transición a un paso <span class="math notranslate nohighligh
 matriz de probabilidades condicionales, que permite conocer la
 probabilidad de alcanzar un estado <span class="math notranslate nohighlight">\(j\)</span> en un paso, dado que el estado
 actual de la cadena de Markov es el estado <span class="math notranslate nohighlight">\(i\)</span>. En una fórmula:</p>
-<p><span class="math notranslate nohighlight">\(p_{ij} = P\left\lbrack Z_{n + 1} = j \middle| Z_{n} = i \right\rbrack\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(p_{ij} = P\left\lbrack Z_{n + 1} = j \middle| Z_{n} = i \right\rbrack\)</span></p>
 <p>Recuerde que, por la propiedad de homogeneidad, el que aparezca en la
 fórmula anterior el índice <span class="math notranslate nohighlight">\(n\)</span> no quiere decir que la probabilidad sea
 definida para un paso específico de la evolución. Los elementos de la
@@ -465,7 +480,7 @@ tiempo <span class="math notranslate nohighlight">\(0\)</span>, es posible calcu
 probabilidad de estado en el tiempo <span class="math notranslate nohighlight">\(1\ \)</span>(que denotamos con
 <span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{1})\)</span> a través del siguiente producto:</p>
 <div class="math notranslate nohighlight">
-\[{\overrightarrow{\pi}}^{1} = \overrightarrow{\alpha} \bullet P.\]</div>
+\[{\overrightarrow{\pi}}^{1} = \overrightarrow{\alpha} \bullet P\]</div>
 <p>El resultado de la multiplicación entre el vector
 <span class="math notranslate nohighlight">\(\overrightarrow{\alpha}\ \)</span>y la matriz <span class="math notranslate nohighlight">\(P\)</span> es otro vector de
 probabilidades, <span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{1}\)</span>, el cual proporciona la
@@ -474,7 +489,7 @@ cuando se conozca la distribución de probabilidad de estado en el paso
 <span class="math notranslate nohighlight">\(n\)</span>, es posible calcular la distribución de probabilidad de estado en el
 paso <span class="math notranslate nohighlight">\(n + 1\)</span>, como sigue:</p>
 <div class="math notranslate nohighlight">
-\[{\overrightarrow{\pi}}^{n + 1} = {\overrightarrow{\pi}}^{n} \bullet P.\]</div>
+\[{\overrightarrow{\pi}}^{n + 1} = {\overrightarrow{\pi}}^{n} \bullet P\]</div>
 <section id="ejercicio-1">
 <h3>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h3>
 <div class="suggestion admonition">
@@ -488,7 +503,7 @@ de probabilidad a un paso <span class="math notranslate nohighlight">\(P\)</span
 1 &amp; 0 &amp; 0\\
 \end{bmatrix}\end{split}\]</div>
 <p><img alt="Diagrama Ejercicio 1" src="_images/ATrans1.png" /></p>
-<p>Supongamos que la cadena se encuentre en el estado <span class="math notranslate nohighlight">\(A\)</span> en el paso (u observación) <span class="math notranslate nohighlight">\(n\)</span>, y determinamos la
+<p>Supongamos que la cadena se encuentre en el estado <span class="math notranslate nohighlight">\(A\)</span> en el paso (u observación) <span class="math notranslate nohighlight">\(n\)</span> y determinamos la
 probabilidad de que se encuentre en cada uno de los estados de <span class="math notranslate nohighlight">\(S\)</span> en el paso <span class="math notranslate nohighlight">\(n + 1\)</span>. De un análisis
 directo del diagrama de transición se obtiene que:</p>
 <ul class="simple">
@@ -496,12 +511,12 @@ directo del diagrama de transición se obtiene que:</p>
 <li><p><span class="math notranslate nohighlight">\(P\left\lbrack Z_{n + 1} = B \middle| Z_{n} = A \right\rbrack = p\)</span>  la cadena transita de A a B</p></li>
 <li><p><span class="math notranslate nohighlight">\(P\left\lbrack Z_{n + 1} = C \middle| Z_{n} = A \right\rbrack = 0\)</span> no es posible alcanzar C en un solo paso</p></li>
 </ul>
-<p>Estas probabilidades corresponden a los tres elementos de la primera fila de la matriz de transición <span class="math notranslate nohighlight">\(P\)</span>, y se
+<p>Estas probabilidades corresponden a los tres elementos de la primera fila de la matriz de transición <span class="math notranslate nohighlight">\(P\)</span> y se
 encuentran en la primera fila porque el estado inicial (el estado <span class="math notranslate nohighlight">\(A\)</span>) es el primero en el orden.</p>
 <p>El vector inicial de distribución de probabilidad de estado en este ejemplo corresponde a <span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{n} = (1,0,0)\)</span>,
 el vector que asigna probabilidad 1 al primer estado (<span class="math notranslate nohighlight">\(A\)</span>) y 0 a los demás, ya que en este caso el estado inicial es conocido.</p>
 <p>Si calculamos el producto <span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{n} \bullet P\)</span> obtenemos:</p>
-<p>$<span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{n} \bullet P =  (1,0,0) \bullet \begin{bmatrix}
+<p><span class="math notranslate nohighlight">\({\overrightarrow{\pi}}^{n} \bullet P =  (1,0,0) \bullet \begin{bmatrix}
 1-p &amp; p &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
 1 &amp; 0 &amp; 0\\
@@ -531,7 +546,7 @@ de su forma matricial, ya que se necesita sumar todas las probabilidades de toda
 a cada estado. Por ejemplo, para el primer elemento <span class="math notranslate nohighlight">\({\overrightarrow{\pi}}_{A}^{n + 1}\)</span> del vector, se suma la probabilidad
 de dos evoluciones:</p>
 <ul class="simple">
-<li><p>La probabilidad de que la cadena empiece en <span class="math notranslate nohighlight">\(A\)</span> (prob. <span class="math notranslate nohighlight">\(1/3\)</span>) y que no transite a <span class="math notranslate nohighlight">\(B\)</span> (prob. <span class="math notranslate nohighlight">\(1 - p\)</span>);</p></li>
+<li><p>La probabilidad de que la cadena empiece en <span class="math notranslate nohighlight">\(A\)</span> (prob. <span class="math notranslate nohighlight">\(1/3\)</span>) y que no transite a <span class="math notranslate nohighlight">\(B\)</span> (prob. <span class="math notranslate nohighlight">\(1 - p\)</span>)</p></li>
 <li><p>La probabilidad de que empiece en <span class="math notranslate nohighlight">\(C\)</span> (prob. <span class="math notranslate nohighlight">\(1/3\)</span>) y transite a <span class="math notranslate nohighlight">\(A\)</span> (prob. <span class="math notranslate nohighlight">\(1\)</span>)</p></li>
 </ul>
 <p>Además, el cálculo a partir de la forma algébrica puede ser fácilmente automatizado en una herramienta computacional.</p>
@@ -544,13 +559,13 @@ probabilidad de estado, podemos determinar la distribución de
 probabilidad de estado en la observación <span class="math notranslate nohighlight">\(n + 2\)</span> usando la misma
 fórmula:</p>
 <div class="math notranslate nohighlight">
-\[{\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P.\]</div>
+\[{\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P\]</div>
 <p>Entonces podemos obtener:</p>
 <div class="math notranslate nohighlight">
-\[{\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P = \left( {\overrightarrow{\pi}}^{n} \bullet P \right) \bullet P = {\overrightarrow{\pi}}^{n} \bullet (P \bullet P) = {\overrightarrow{\pi}}^{n} \bullet P^{2}.\]</div>
+\[{\overrightarrow{\pi}}^{n + 2} = {\overrightarrow{\pi}}^{n + 1} \bullet P = \left( {\overrightarrow{\pi}}^{n} \bullet P \right) \bullet P = {\overrightarrow{\pi}}^{n} \bullet (P \bullet P) = {\overrightarrow{\pi}}^{n} \bullet P^{2}\]</div>
 <p>Y en general:</p>
 <div class="math notranslate nohighlight">
-\[{\overrightarrow{\pi}}^{n + m} = {\overrightarrow{\pi}}^{n} \bullet P^{m}.\]</div>
+\[{\overrightarrow{\pi}}^{n + m} = {\overrightarrow{\pi}}^{n} \bullet P^{m}\]</div>
 <p>A través de las potencias de la matriz <span class="math notranslate nohighlight">\(P\)</span> y de una distribución inicial
 es por ende posible determinar la distribución de probabilidad de estado
 para cualquier índice en el futuro. Las potencias de la matriz P son
@@ -583,15 +598,15 @@ eficiente que la otra en términos del tiempo de cálculo necesario.</p>
 <p>En una línea de producción de gaseosas existen dos máquinas embotelladoras idénticas, cada una con capacidad para
 embotellar 2,000 botellas/hora de funcionamiento. Cada máquina puede sufrir problemas mecánicos, por lo cual cada
 hora con probabilidad de 0.1 se daña. Si la máquina se daña, podrá ser reparada solo en la noche, cuando la línea
-termina su actividad. La producción empieza a las 6AM, y termina a las 5PM. ¿Cuál es la probabilidad de que ambas
+termina su actividad. La producción empieza a las 6 A.M. y termina a las 5 P.M. ¿Cuál es la probabilidad de que ambas
 máquinas paren en un día? ¿Cuál es el número promedio de botellas procesadas en un día en la línea?</p>
 <p>Para la primera pregunta dado que:</p>
 <ul class="simple">
 <li><p>Las máquinas son idénticas</p></li>
 <li><p>Las máquinas son independientes</p></li>
-<li><p>Cuando una máquina para no es reparada en el día</p></li>
+<li><p>Cuando una máquina para, no es reparada en el día</p></li>
 </ul>
-<p>Es posible estudiar el comportamiento de una de ellas, y la probabilidad de que ambas máquinas paren en un día será el cuadrado   |
+<p>Es posible estudiar el comportamiento de una de ellas, y la probabilidad de que ambas máquinas paren en un día será el cuadrado
 de la probabilidad de que una de las máquinas pare.</p>
 <p>Definimos la cadena de Markov en tiempo discreto
 <span class="math notranslate nohighlight">\(\{ X_{n},\ 0 \leq n \leq 11\}\)</span>, donde <span class="math notranslate nohighlight">\(X_{n}\)</span> es el estado de la
@@ -658,7 +673,7 @@ condicional</p>
 \[P\left\lbrack X(t) = j \middle| X(0) = i \right\rbrack.\]</div>
 <p>Observamos que la probabilidad condicional arriba es una función
 continua del tiempo <span class="math notranslate nohighlight">\(t\)</span>, por ende, el análisis necesita utilizar las
-técnicas del análisis del continuo, es decir límites y derivadas.</p>
+técnicas del análisis del continuo, es decir, límites y derivadas.</p>
 <p>Las tasas de transición en la matriz <span class="math notranslate nohighlight">\(Q\)</span> corresponden a probabilidades
 cuando el intervalo de tiempo <span class="math notranslate nohighlight">\(\lbrack 0,t\rbrack\)</span> es muy pequeño. Es
 decir, si consideramos un tiempo <span class="math notranslate nohighlight">\(\delta\)</span> cercano a 0, tendremos que</p>
@@ -669,17 +684,17 @@ exponenciales de los tiempos de permanencia en los estados en las CMTC.
 Recuerde que, por la homogeneidad del proceso, el hecho que en la
 fórmula de arriba aparezcan valores específicos de los tiempos (en este
 caso 0 y <span class="math notranslate nohighlight">\(\delta\)</span>) no quiere decir que esta relación solo sea válida
-para esa ventana especifica de la evolución del proceso.</p>
+para esa ventana específica de la evolución del proceso.</p>
 <p>De esta forma y análogamente al caso discreto, tendremos que, si
 <span class="math notranslate nohighlight">\(\overrightarrow{\pi}(0)\)</span> es el vector de la distribución de
 probabilidad de estado en el tiempo 0, la distribución de probabilidad
 de estado en el tiempo <span class="math notranslate nohighlight">\(\delta\)</span> será aproximadamente</p>
 <div class="math notranslate nohighlight">
-\[\overrightarrow{\pi}(\delta)\sim\overrightarrow{\pi}(0)Q\delta \Rightarrow \frac{\overrightarrow{\pi}(\delta)}{\delta}\sim\overrightarrow{\pi}(0)Q.\]</div>
+\[\overrightarrow{\pi}(\delta)\sim\overrightarrow{\pi}(0)Q\delta \Rightarrow \frac{\overrightarrow{\pi}(\delta)}{\delta}\sim\overrightarrow{\pi}(0)Q\]</div>
 <p>Cuando se considere el límite cuando <span class="math notranslate nohighlight">\(\delta \rightarrow 0^{+}\)</span>, la
 aproximación arriba se vuelve exacta, como sigue:</p>
 <div class="math notranslate nohighlight">
-\[\lim_{\delta \rightarrow 0^{+}}{\frac{\overrightarrow{\pi}(\delta)}{\delta} = \overrightarrow{\pi}(0)Q}.\]</div>
+\[\lim_{\delta \rightarrow 0^{+}}{\frac{\overrightarrow{\pi}(\delta)}{\delta} = \overrightarrow{\pi}(0)Q}\]</div>
 <p>Ahora bien, observamos que el límite en la parte izquierda de la
 ecuación de arriba es exactamente la derivada de la función del tiempo
 <span class="math notranslate nohighlight">\(\overrightarrow{\pi}(\delta)\)</span>, por lo cual obtenemos que</p>
@@ -692,14 +707,14 @@ probabilidad condicional de que el proceso ocupe el estado dado que
 empezó como especifica <span class="math notranslate nohighlight">\(\overrightarrow{\pi}(0)\)</span>. Por la forma de la
 ecuación diferencial (nótese que la función incógnita
 <span class="math notranslate nohighlight">\(\overrightarrow{\pi}( \bullet )\)</span> aparece en ambos lados), la solución
-involucra funciones exponenciales. Más precisamente, es posible
-demostrar que</p>
+involucra funciones exponenciales. En términos específicos, es posible
+demostrar que:</p>
 <div class="math notranslate nohighlight">
-\[\overrightarrow{\pi}(t) = \overrightarrow{\pi}(0)e^{Qt},\]</div>
+\[\overrightarrow{\pi}(t) = \overrightarrow{\pi}(0)e^{Qt}\]</div>
 <p>donde <span class="math notranslate nohighlight">\(e^{Qt}\)</span> es el exponencial de la matriz <span class="math notranslate nohighlight">\(Qt\)</span>. El exponencial de
 una matriz A se define como</p>
 <div class="math notranslate nohighlight">
-\[e^{A} = \sum_{k = 0}^{\infty}\frac{A^{k}}{k!}.\]</div>
+\[e^{A} = \sum_{k = 0}^{\infty}\frac{A^{k}}{k!}\]</div>
 <p>Entonces, el análisis transitorio de las cadenas de Markov de tiempo
 continuo se realiza a través del cálculo del exponencial de la matriz de
 tasas <span class="math notranslate nohighlight">\(Q\)</span>. Este cálculo es muy laborioso y solo puede ser llevado a cabo
@@ -764,7 +779,7 @@ cuya matriz de tasas transición es la siguiente:</p>
 <p>El diagrama de transición de esta cadena se ilustra en la siguiente figura:</p>
 <p><img alt="Diagrama Ejercicio 5" src="_images/ATrans3.png" /></p>
 <p>Por ende, el análisis no es sencillo como en el caso anterior, y
-resulta practico utilizar algún software para dicho calculo</p>
+resulta práctico utilizar algún software para dicho cálculo.</p>
 </div>
 </section>
 </section>
@@ -801,6 +816,24 @@ resulta practico utilizar algún software para dicho calculo</p>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span style="color:#008380">Cadenas de Markov</span></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span style="color:#008380">Clasificación de estados</span></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
