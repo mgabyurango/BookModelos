@@ -36,3 +36,9 @@ parts:
     - file: chapter17
     - file: Semana 15
     - file: chapter18
+
+- caption: Complementarias
+    numbered: false
+    chapters:
+      - file: Complementaria1
+      - file: Complementaria2
