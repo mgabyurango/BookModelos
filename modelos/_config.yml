@@ -35,8 +35,3 @@ html:
   use_repository_button: true
   use_edit_page_button: false
 
-html:
-  theme:
-    primary_color: '#003f5c'  # Color principal del tema
-    secondary_color: '#ffa600'  # Color secundario del tema
-    font: 'Helvetica'
