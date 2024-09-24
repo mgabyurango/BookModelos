@@ -1,4 +1,4 @@
-# <span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span>
+# <span style="color:#bc5090">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span>
 
 Las lecturas de este módulo son:
 

@@ -1,4 +1,4 @@
-# <span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span>
+# <span style="color:#ff6361">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span>
 
 Las lecturas de este módulo son:
 
