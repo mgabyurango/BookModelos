@@ -1,13 +1,29 @@
 # <span style="color:#008380">Módulo 2: De un sistema real a un modelo (Semanas 2-8)</span>
 
-En este espacio encontrará las orientaciones y el material necesario para las actividades de este módulo. Los temas que trabajaremos son: 
+Las lecturas de este módulo son:
 
-- Procesos de Poisson e introducción a cadenas de Markov
-- Cadenas de Markov y matrices de transición
-- Cadenas embebidas
-- Análisis transitorio
-- Comportamiento límite: distribución en estado estable y largo tiempo
-- Tiempos de primera pasada y tiempos de ocupación
-- Comportamiento límite: probabilidades de absorción y tiempo de absorción
+### Semana 2:
 
-A continuación, encontrará las actividades de este módulo por semana.
+[Procesos de Poisson](chapter2.md)
+[Cadenas de Markov](chapter3.md)
+
+
+### Semana 3:
+[Procesos de Poisson](chapter4.md)
+
+
+### Semana 5:
+[Clasificación de estados](chapter5.md)
+
+
+### Semana 6:
+[Probabilidades en estado estable](chapter6.md)
+[Cadenas Embebidas](chapter7.md)
+
+
+### Semana 7:
+[Análisis de tiempos promedios](chapter8.md)
+
+
+### Semana 8:
+[Clasificación de estados](chapter9.md)

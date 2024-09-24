@@ -1,10 +1,17 @@
 # <span style="color:#E57231">Módulo 3: Medir el sistema a través del modelo (Semanas 9-12)</span>
 
-En este espacio encontrará las orientaciones y el material necesario para las actividades de este módulo. Los temas que trabajaremos son: 
-- Ley de Little
-- Procesos de nacimiento y muerte
-- Teoría de colas
-- Redes abiertas
-- Planeación de fuerza de trabajo y función de recompensa
+Las lecturas de este módulo son:
 
-A continuación, encontrará las actividades de este módulo por semana.
+### Semana 9:
+
+[Ley de Little](chapter10.md)
+[Procesos de nacimiento y muerte](chapter11.md)
+[Teoría de colas](chapter12.md)
+
+
+### Semana 10:
+[Redes de Jackson](chapter13.md)
+
+
+### Semana 11:
+[Costos en Cadenas de Markov](chapter14.md)
