@@ -1,4 +1,4 @@
-# Redes de Jackson
+# <span style="color:#E57231">Redes de Jackson</span>
 
 En este capítulo se introduce una clase de redes de colas conocida como
 redes de Jackson, por el nombre del matemático estadunidense James
