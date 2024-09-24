@@ -5,15 +5,15 @@ Este es el libro oficial del curso de Modelos Probabilísticos que el equipo hem
 Despliega el contenido:
 
 ```{dropdown} Módulos: Lecturas Semanales
-- [Módulo 1: Introducción](Modulo1.md)
-- [Módulo 2: De un sistema real a un modelo](Modulo2.md)
-- [Módulo 3: Medir el sistema a través del modelo](Modulo3.md)
-- [Módulo 4: Toma de decisiones para mejorar el sistema](Modulo4.md)
+- <i class="fas fa-concierge-bell" style="color:#ff6361"></i> [Módulo 1: Introducción](Modulo1.md)
+- <i class="fas fa-object-ungroup" style="color:#bc5090"></i> [Módulo 2: De un sistema real a un modelo](Modulo2.md)
+- <i class="fas fa-pen-ruler" style="color:#58508d"></i> [Módulo 3: Medir el sistema a través del modelo](Modulo3.md)
+- <i class="fas fa-lightbulb" style="color:#003f5c"></i> [Módulo 4: Toma de decisiones para mejorar el sistema](Modulo4.md)
 ```
 
 ```{dropdown} Módulos: Complementarias
-- [Complementaria 1: Introducción a Python](Complementaria1.ipynb)
-- [Complementaria 2: Álgebra Lineal en Python](Complementaria2.ipynb)
+- <i class="fas fa-concierge-bell" style="color:#ff6361"></i> [Complementaria 1: Introducción a Python](Complementaria1.ipynb)
+- <i class="fas fa-concierge-bell" style="color:#ff6361"></i> [Complementaria 2: Álgebra Lineal en Python](Complementaria2.ipynb)
 ```
 
 ```{admonition} Haz click acá!
