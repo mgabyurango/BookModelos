@@ -48,17 +48,17 @@ Despliegue el contenido
 <details class="modules-dropdown">
     <summary>Módulos: Lecturas Semanales</summary>
 
-    <h2><i class="fas fa-concierge-bell" style="color:#A62465"></i> [Módulo 1: Introducción](Modulo1.md)</h2>
-    <h2><i class="fas fa-object-ungroup" style="color:#008380"></i> [Módulo 2: De un sistema real a un modelo](Modulo2.md)</h2>
-    <h2><i class="fas fa-pen-ruler" style="color:#E57231"></i> [Módulo 3: Medir el sistema a través del modelo](Modulo3.md)</h2>
-    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> [Módulo 4: Toma de decisiones para mejorar el sistema](Modulo4.md)</h2>
+    <h2><i class="fas fa-concierge-bell" style="color:#A62465"></i> <a href="Modulo1.md">Módulo 1: Introducción</a></h2>
+    <h2><i class="fas fa-object-ungroup" style="color:#008380"></i> <a href="Modulo2.md">Módulo 2: De un sistema real a un modelo</a></h2>
+    <h2><i class="fas fa-pen-ruler" style="color:#E57231"></i> <a href="Modulo3.md">Módulo 3: Medir el sistema a través del modelo</a></h2>
+    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a href="Modulo4.md">Módulo 4: Toma de decisiones para mejorar el sistema</a></h2>
 </details>
 
 <details class="complementary-dropdown">
     <summary>Complementarias</summary>
 
-    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> [Complementaria 1: Introducción a Python](Complementaria1.ipynb)</h2>
-    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> [Complementaria 2: Álgebra Lineal en Python](Complementaria2.ipynb)</h2>
+    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a href="Complementaria1.ipynb">Complementaria 1: Introducción a Python</a></h2>
+    <h2><i class="fas fa-lightbulb" style="color:#4F8F1E"></i> <a href="Complementaria2.ipynb">Complementaria 2: Álgebra Lineal en Python</a></h2>
 </details>
 
 
